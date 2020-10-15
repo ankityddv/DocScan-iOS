@@ -34,6 +34,22 @@ class ScanVC: UIViewController{
 
 extension ScanVC:VNDocumentCameraViewControllerDelegate {
     
+    func saveImage(image: UIImage) -> Bool {
+        guard let data = image.jpegData(compressionQuality: 1) ?? image.pngData() else {
+            return false
+        }
+        guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else {
+            return false
+        }
+        do {
+            try data.write(to: directory.appendingPathComponent("test.png")!)
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+    
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         for pageNumber in 0..<scan.pageCount {
             let image = scan.imageOfPage(at: pageNumber)
