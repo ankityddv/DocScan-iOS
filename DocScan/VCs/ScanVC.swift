@@ -14,10 +14,10 @@ class ScanVC: UIViewController{
     
     @IBOutlet weak var ScannedImageView: UIImageView!
     @IBOutlet var emptyView: UIView!
+    @IBOutlet weak var addBttn: UIBarButtonItem!
     
-    @IBAction func scanBttnTapped(_ sender: Any) {
+    @IBAction func showaddTapped(_ sender: Any) {
         configureDocumentView()
-        //view.addSubview(emptyView)
     }
     
     override func viewDidLoad() {
@@ -27,6 +27,7 @@ class ScanVC: UIViewController{
         // To hide the top line
         self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.backgroundImage = UIImage()
+        
     }
     
     private func configureDocumentView(){
