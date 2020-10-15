@@ -43,7 +43,6 @@ extension ScanVC:VNDocumentCameraViewControllerDelegate {
     }
     
     func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {
-        // You are responsible for dismissing the controller.
         controller.dismiss(animated: true)
     }
     

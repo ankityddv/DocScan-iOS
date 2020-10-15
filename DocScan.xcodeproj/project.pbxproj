@@ -12,6 +12,7 @@
 		64313192D2D248844F1182F1 /* Pods_DocScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DC432271E053DED0D7D6D /* Pods_DocScan.framework */; };
 		BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FAB1253857D50068A286 /* ScanVC.swift */; };
 		BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FABA253868C00068A286 /* SettingsTableVC.swift */; };
+		BC911367253870EC0029C0F0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC911366253870EC0029C0F0 /* ShadowView.swift */; };
 		BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79425384428005F7B99 /* AppDelegate.swift */; };
 		BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79625384428005F7B99 /* SceneDelegate.swift */; };
 		BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79825384428005F7B99 /* OnboardingVC.swift */; };
@@ -49,6 +50,7 @@
 		A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocScan_DocScanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC72FAB1253857D50068A286 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		BC72FABA253868C00068A286 /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
+		BC911366253870EC0029C0F0 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		BCFDF79125384428005F7B99 /* DocScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFDF79425384428005F7B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFDF79625384428005F7B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC91136B253871040029C0F0 /* Custom Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC911366253870EC0029C0F0 /* ShadowView.swift */,
+			);
+			path = "Custom Files";
+			sourceTree = "<group>";
+		};
 		BCCFDF05253845AC00A7F9A5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		BCCFDF06253845B500A7F9A5 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				BC91136B253871040029C0F0 /* Custom Files */,
 				BCFDF79825384428005F7B99 /* OnboardingVC.swift */,
 				BC72FAB1253857D50068A286 /* ScanVC.swift */,
 				BC72FABA253868C00068A286 /* SettingsTableVC.swift */,
@@ -436,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC911367253870EC0029C0F0 /* ShadowView.swift in Sources */,
 				BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */,
 				BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */,
 				BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */,
