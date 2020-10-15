@@ -1,0 +1,6 @@
+framework module TDCRoundButton {
+  umbrella header "TDCRoundButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

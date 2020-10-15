@@ -1,0 +1,6 @@
+framework module Pods_DocScan_DocScanUITests {
+  umbrella header "Pods-DocScan-DocScanUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

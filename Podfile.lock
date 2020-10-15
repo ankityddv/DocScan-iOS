@@ -1,0 +1,16 @@
+PODS:
+  - TDCRoundButton (0.1.4)
+
+DEPENDENCIES:
+  - TDCRoundButton
+
+SPEC REPOS:
+  trunk:
+    - TDCRoundButton
+
+SPEC CHECKSUMS:
+  TDCRoundButton: e62175861daca33f6d780f3718505747fe4db70a
+
+PODFILE CHECKSUM: d91da47b3918bb5f899e45b6cda512f1a141f3f5
+
+COCOAPODS: 1.9.3
