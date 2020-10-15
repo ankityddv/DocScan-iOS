@@ -1,16 +1,20 @@
 PODS:
+  - CBFlashyTabBarController (0.8.3)
   - TDCRoundButton (0.1.4)
 
 DEPENDENCIES:
+  - CBFlashyTabBarController
   - TDCRoundButton
 
 SPEC REPOS:
   trunk:
+    - CBFlashyTabBarController
     - TDCRoundButton
 
 SPEC CHECKSUMS:
+  CBFlashyTabBarController: bc6b11dd4cbc9b54785c8944156e2f4d4f03b088
   TDCRoundButton: e62175861daca33f6d780f3718505747fe4db70a
 
-PODFILE CHECKSUM: d91da47b3918bb5f899e45b6cda512f1a141f3f5
+PODFILE CHECKSUM: d3541efdc507158b5b612b1aa1e9eaa03cd43a66
 
 COCOAPODS: 1.9.3

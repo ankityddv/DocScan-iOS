@@ -3,93 +3,140 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04A08D0FB9E4DD18CD277A28FC68C1D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0FF0A2425D60391DF70212B46C3FA6D9 /* Pods-DocScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB5371DEB25B189CA9BD04340141D85 /* Pods-DocScan-dummy.m */; };
-		18EB75DBAE12F2C4762E5C2E625C8C71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2712A88B26382767E19B140A7CC4D7D9 /* Pods-DocScan-DocScanUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 448EFE0E2FFA6687A9A643B45B44544D /* Pods-DocScan-DocScanUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BA46128F8D7479CCD09B2E88C109DB5 /* CBTabItemBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E043F668F2EAB55E2B792252627CADF /* CBTabItemBasicAnimation.swift */; };
 		30A6227408087D5E2F63DEEB429E587D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		41D9064B44905FE30B8B5116540C0E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		46DBFD7C822D4FB9819D4F9EB204D85E /* Pods-DocScanTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4FFC45066DBE43E73493BB88D6EF4 /* Pods-DocScanTests-dummy.m */; };
-		6C70D085F452E388B7A6DE1F1C3688F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9B672079AB8B0DC2D32401C3F0DCE10D /* TDCRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488C27F532D674498B215CFF716A608 /* TDCRoundButton.swift */; };
+		4DCBE3FD9516343EC2F88E21C98F6545 /* CBFlashyTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A58872905533EA8D4371030C0F1F1DE8 /* CBFlashyTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D82F199CC3B3882A4427D82CF54F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5A15123627499A1087BD267801BA5BFC /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43304BAF44C7F2246F037F6BC2D40C1E /* CBTabBarButton.swift */; };
+		8472F26CD9D775708DEE69BAF2D90D60 /* Pods-DocScan-DocScanUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186018B10F00BE61FBB57D85E820A4 /* Pods-DocScan-DocScanUITests-dummy.m */; };
+		87E32330C480E15EA28EE9F7D772696F /* CBTabItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FCCDA99D210E8B9EAE47FD9AD1B2D0 /* CBTabItemAnimation.swift */; };
+		8986CC7B2C9C15F1917E798117F644DC /* CBFlashyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA7ED0CC3D442E2CD33AEBD627BB01 /* CBFlashyTabBar.swift */; };
+		92492D08B5FF542DDD2DF65BBEC64727 /* CBTabItemDeselectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4927495B673C053EA86FF2E238274A /* CBTabItemDeselectAnimation.swift */; };
+		9B672079AB8B0DC2D32401C3F0DCE10D /* TDCRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C144697FD2F58EC0D766924984997 /* TDCRoundButton.swift */; };
 		9D65E9F9743FF5460F69B3E80182AB7A /* Pods-DocScanTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E481D95C0FFE1BCE7AB2505A0A8A1F5 /* Pods-DocScanTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADA593E0116964C97D9E240329C7E898 /* Pods-DocScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE30D4B579CF91DD8BDC20159E6D2CD2 /* Pods-DocScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFF6A7338E4FA23BC9F51E3452F94656 /* Pods-DocScan-DocScanUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186018B10F00BE61FBB57D85E820A4 /* Pods-DocScan-DocScanUITests-dummy.m */; };
-		B9BFAE2F8C42F6C4E86BC4E688E10E1F /* TDCRoundButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4CE80AB040A0E31A2139EAF373DB98 /* TDCRoundButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD64B31B31B564F5D92271DB4C8C80F4 /* TDCRoundButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FEC70F470B3F2D673DC5BBB0A71508 /* TDCRoundButton-dummy.m */; };
+		A211362205D10B7E1EB641AC03BB97EF /* CBTabItemSelectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1C17799E9E7886601455BCCAA864 /* CBTabItemSelectAnimation.swift */; };
+		B62CE540AEC6C3C0CCEBC83B4EC04514 /* CBFlashyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC426B4612B708A726DB3F4F4D68E2 /* CBFlashyTabBarController.swift */; };
+		B6B27DCFF1AE3D3A8EB4C340A8964332 /* Pods-DocScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE30D4B579CF91DD8BDC20159E6D2CD2 /* Pods-DocScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BFAE2F8C42F6C4E86BC4E688E10E1F /* TDCRoundButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA3ACB6B6264F51514F98186F589EC4 /* TDCRoundButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5AD841D287F70BBA71556417E7F02B9 /* Pods-DocScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB5371DEB25B189CA9BD04340141D85 /* Pods-DocScan-dummy.m */; };
+		C703A55806DE911713A21A745C593EA5 /* Pods-DocScan-DocScanUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 448EFE0E2FFA6687A9A643B45B44544D /* Pods-DocScan-DocScanUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB7229C9FA019393DBEA2A73247A81AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E82E20D4B21D30CC8A06C5CF540FDCF8 /* CBFlashyTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FD37E9561CDFD576E63D9F916EE6DE /* CBFlashyTabBarController-dummy.m */; };
+		FD64B31B31B564F5D92271DB4C8C80F4 /* TDCRoundButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D27436DC0C2281E9F693F23C70A11A /* TDCRoundButton-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3673DE54BD1B9B767F4D31327F5ABFEA /* PBXContainerItemProxy */ = {
+		A57EEC5EDDB23351B8487725E09D8171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5737872A76EFCB2A97F445D9434307C7;
+			remoteInfo = CBFlashyTabBarController;
+		};
+		B1D2104FB5E257A3F4D551AE87E89DB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3BC1729E1A2A5FADB49B46C3DE5BF3DA;
 			remoteInfo = TDCRoundButton;
 		};
-		4AFC860362BA817B48B57A2527E7C547 /* PBXContainerItemProxy */ = {
+		C45B45249091E202E8CFA43A8F7D2C27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 25999B3C59804F268026E426B5F23AC5;
 			remoteInfo = "Pods-DocScan";
 		};
-		90596E954D12FF27029F8047220EA8A2 /* PBXContainerItemProxy */ = {
+		D652E7AEFB6452ABDFB75F2447473034 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3BC1729E1A2A5FADB49B46C3DE5BF3DA;
 			remoteInfo = TDCRoundButton;
 		};
+		DAA5A87B3CC9B4A1323853A0F240BEED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5737872A76EFCB2A97F445D9434307C7;
+			remoteInfo = CBFlashyTabBarController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		030C9F6778A7340BD88F3F9A4D6BD63A /* Pods-DocScanTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocScanTests-Info.plist"; sourceTree = "<group>"; };
 		044888A9971153EE3E44059C78B8110B /* Pods-DocScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocScan-Info.plist"; sourceTree = "<group>"; };
+		05FD37E9561CDFD576E63D9F916EE6DE /* CBFlashyTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBFlashyTabBarController-dummy.m"; sourceTree = "<group>"; };
+		07D4E958BAD766CBA1D48DEB63D524C9 /* CBFlashyTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CBFlashyTabBarController.framework; path = CBFlashyTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC4FFC45066DBE43E73493BB88D6EF4 /* Pods-DocScanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DocScanTests-dummy.m"; sourceTree = "<group>"; };
-		0CA5C0EFE485B43A02E7FB33C20FFD2C /* TDCRoundButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TDCRoundButton.release.xcconfig; sourceTree = "<group>"; };
 		26A0CDDDED6408C4E80581E63C61BCDB /* TDCRoundButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TDCRoundButton.framework; path = TDCRoundButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB3528C6E1B44A1373628415CED9ED4 /* Pods-DocScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocScan.debug.xcconfig"; sourceTree = "<group>"; };
+		2BEA7ED0CC3D442E2CD33AEBD627BB01 /* CBFlashyTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBFlashyTabBar.swift; path = CBFlashyTabBarController/Classes/CBFlashyTabBar.swift; sourceTree = "<group>"; };
+		2E043F668F2EAB55E2B792252627CADF /* CBTabItemBasicAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBTabItemBasicAnimation.swift; path = CBFlashyTabBarController/Classes/Animation/CBTabItemBasicAnimation.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32BB090BAFCA534C05FFBAB09381D2AA /* Pods_DocScanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DocScanTests.framework; path = "Pods-DocScanTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A00091DD0F6020BC7C9C6B55D656450 /* TDCRoundButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TDCRoundButton-Info.plist"; sourceTree = "<group>"; };
 		3BE809E5252D9B2849B1716ABF4EA841 /* Pods-DocScanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DocScanTests.modulemap"; sourceTree = "<group>"; };
+		408A523D388D256DD8A80113FB29BD7B /* TDCRoundButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TDCRoundButton.debug.xcconfig; sourceTree = "<group>"; };
+		43304BAF44C7F2246F037F6BC2D40C1E /* CBTabBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBTabBarButton.swift; path = CBFlashyTabBarController/Classes/CBTabBarButton.swift; sourceTree = "<group>"; };
 		448EFE0E2FFA6687A9A643B45B44544D /* Pods-DocScan-DocScanUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DocScan-DocScanUITests-umbrella.h"; sourceTree = "<group>"; };
-		4A4CE80AB040A0E31A2139EAF373DB98 /* TDCRoundButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDCRoundButton-umbrella.h"; sourceTree = "<group>"; };
+		4922DDAE09986408EF53A38F7E37BFC2 /* TDCRoundButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TDCRoundButton.release.xcconfig; sourceTree = "<group>"; };
+		4F910DD24ED25EC4143DFBD095BA0AFF /* CBFlashyTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CBFlashyTabBarController.debug.xcconfig; sourceTree = "<group>"; };
 		5204F75113627D3B317626335BD352EB /* Pods-DocScan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DocScan-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C14A0C3681EB6E1C08007EB06932821 /* TDCRoundButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDCRoundButton-prefix.pch"; sourceTree = "<group>"; };
+		54D27436DC0C2281E9F693F23C70A11A /* TDCRoundButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TDCRoundButton-dummy.m"; sourceTree = "<group>"; };
 		6407611EB5BC242B7907FFEE2381D9FD /* Pods-DocScan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocScan-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E73BB0A18AC9B39FA59DF4B06042E90 /* Pods-DocScan-DocScanUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocScan-DocScanUITests-Info.plist"; sourceTree = "<group>"; };
 		708674DF2A59BE1B8ED7BEB8E378F895 /* Pods-DocScanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocScanTests.release.xcconfig"; sourceTree = "<group>"; };
 		746744D594593E071F0775930DC5EA60 /* Pods-DocScan-DocScanUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DocScan-DocScanUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7676BFC8CB32984BF9EDBDF9CBDCA913 /* TDCRoundButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDCRoundButton-prefix.pch"; sourceTree = "<group>"; };
 		78233723E630A40C44A0B8CE8FB35784 /* Pods-DocScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocScan.release.xcconfig"; sourceTree = "<group>"; };
 		845B3E31AB389930847914826292FB93 /* Pods-DocScan-DocScanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocScan-DocScanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		87891099D307F17BAE18CE523C9EB542 /* TDCRoundButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TDCRoundButton.modulemap; sourceTree = "<group>"; };
+		8C49777F99373AB9EAB1DA950DB15E14 /* CBFlashyTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CBFlashyTabBarController-Info.plist"; sourceTree = "<group>"; };
 		901A7CAB8301EF8E3B1607BB9BC03FE3 /* Pods_DocScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DocScan.framework; path = "Pods-DocScan.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90C6C1C1C133A2976E3564F1FE1C9CD4 /* TDCRoundButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TDCRoundButton.debug.xcconfig; sourceTree = "<group>"; };
 		918C454D6AA57C3F0FBB1E9E8FE031DE /* Pods-DocScanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocScanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92880DD233CF4385A9AACA95517602BA /* Pods_DocScan_DocScanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DocScan_DocScanUITests.framework; path = "Pods-DocScan-DocScanUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		967BA7800CE1D82ECBA6EA9A6A126FD0 /* Pods-DocScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DocScan.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E481D95C0FFE1BCE7AB2505A0A8A1F5 /* Pods-DocScanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DocScanTests-umbrella.h"; sourceTree = "<group>"; };
-		A158AE7AC1EF317B5E7486A4859F8137 /* TDCRoundButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TDCRoundButton-Info.plist"; sourceTree = "<group>"; };
+		A05861F4D36C1689A7008B5E0832B4AB /* CBFlashyTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CBFlashyTabBarController.modulemap; sourceTree = "<group>"; };
 		A5186018B10F00BE61FBB57D85E820A4 /* Pods-DocScan-DocScanUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DocScan-DocScanUITests-dummy.m"; sourceTree = "<group>"; };
+		A58872905533EA8D4371030C0F1F1DE8 /* CBFlashyTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBFlashyTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		AB3C144697FD2F58EC0D766924984997 /* TDCRoundButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDCRoundButton.swift; path = Source/TDCRoundButton.swift; sourceTree = "<group>"; };
+		AE8A1C17799E9E7886601455BCCAA864 /* CBTabItemSelectAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBTabItemSelectAnimation.swift; path = CBFlashyTabBarController/Classes/Animation/CBTabItemSelectAnimation.swift; sourceTree = "<group>"; };
 		AEB5371DEB25B189CA9BD04340141D85 /* Pods-DocScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DocScan-dummy.m"; sourceTree = "<group>"; };
 		B0ABE33EA93F49939B0A29ACAB7710A8 /* Pods-DocScan-DocScanUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocScan-DocScanUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C2FEC70F470B3F2D673DC5BBB0A71508 /* TDCRoundButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TDCRoundButton-dummy.m"; sourceTree = "<group>"; };
-		C488C27F532D674498B215CFF716A608 /* TDCRoundButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TDCRoundButton.swift; path = Source/TDCRoundButton.swift; sourceTree = "<group>"; };
+		C5FCCDA99D210E8B9EAE47FD9AD1B2D0 /* CBTabItemAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBTabItemAnimation.swift; path = CBFlashyTabBarController/Classes/Animation/CBTabItemAnimation.swift; sourceTree = "<group>"; };
 		C6DE536E6E9DF6D29FBAE9F7FCA1F665 /* Pods-DocScan-DocScanUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DocScan-DocScanUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CC4927495B673C053EA86FF2E238274A /* CBTabItemDeselectAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBTabItemDeselectAnimation.swift; path = CBFlashyTabBarController/Classes/Animation/CBTabItemDeselectAnimation.swift; sourceTree = "<group>"; };
+		D01E18CCC73EB490ECBFF255969761BA /* CBFlashyTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CBFlashyTabBarController.release.xcconfig; sourceTree = "<group>"; };
 		D09E4A9173FE4683A6E891B33DF1C763 /* Pods-DocScanTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocScanTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3272F4D6C3F38C203CF3C10701AFB23 /* Pods-DocScan-DocScanUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DocScan-DocScanUITests.modulemap"; sourceTree = "<group>"; };
 		D3CD8359CFBC3A91065B254B6C780B3B /* Pods-DocScanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DocScanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA8BF1AAAA9B34B4313209C1F11D5236 /* CBFlashyTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBFlashyTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		DAFC426B4612B708A726DB3F4F4D68E2 /* CBFlashyTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBFlashyTabBarController.swift; path = CBFlashyTabBarController/Classes/CBFlashyTabBarController.swift; sourceTree = "<group>"; };
 		DE7136AF3AADD01CFB83EE93CE9F8784 /* Pods-DocScan-DocScanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocScan-DocScanUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EBAFDA2F61740C5349F973E1343BC8A1 /* TDCRoundButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TDCRoundButton.modulemap; sourceTree = "<group>"; };
+		FDA3ACB6B6264F51514F98186F589EC4 /* TDCRoundButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TDCRoundButton-umbrella.h"; sourceTree = "<group>"; };
 		FE2F9D15C503B24E7BEA483174EDEFBA /* Pods-DocScan-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DocScan-frameworks.sh"; sourceTree = "<group>"; };
 		FE30D4B579CF91DD8BDC20159E6D2CD2 /* Pods-DocScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DocScan-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3BEE1D632B16A9ACCFF58495438976F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D9064B44905FE30B8B5116540C0E78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72E5C2D478CE4DB774434AF6C4206534 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,19 +145,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC5FC325F15F351BCA075BDA927C5DFB /* Frameworks */ = {
+		AAB48942E0F5B1AD3AAC1680585B2F99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EB75DBAE12F2C4762E5C2E625C8C71 /* Foundation.framework in Frameworks */,
+				CB7229C9FA019393DBEA2A73247A81AF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C401CBC22CE46BD1AA91893EFDCA9BDD /* Frameworks */ = {
+		D0812A785D49901D91CF5D37D77CF9B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C70D085F452E388B7A6DE1F1C3688F1 /* Foundation.framework in Frameworks */,
+				59D82F199CC3B3882A4427D82CF54F90 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,15 +182,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		46E9E4E8603CEB30F4CF47A49EF258B5 /* Products */ = {
+		231BFBE7D975F0C3CE52E37797E6B1F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				901A7CAB8301EF8E3B1607BB9BC03FE3 /* Pods_DocScan.framework */,
-				92880DD233CF4385A9AACA95517602BA /* Pods_DocScan_DocScanUITests.framework */,
-				32BB090BAFCA534C05FFBAB09381D2AA /* Pods_DocScanTests.framework */,
-				26A0CDDDED6408C4E80581E63C61BCDB /* TDCRoundButton.framework */,
+				A05861F4D36C1689A7008B5E0832B4AB /* CBFlashyTabBarController.modulemap */,
+				05FD37E9561CDFD576E63D9F916EE6DE /* CBFlashyTabBarController-dummy.m */,
+				8C49777F99373AB9EAB1DA950DB15E14 /* CBFlashyTabBarController-Info.plist */,
+				DA8BF1AAAA9B34B4313209C1F11D5236 /* CBFlashyTabBarController-prefix.pch */,
+				A58872905533EA8D4371030C0F1F1DE8 /* CBFlashyTabBarController-umbrella.h */,
+				4F910DD24ED25EC4143DFBD095BA0AFF /* CBFlashyTabBarController.debug.xcconfig */,
+				D01E18CCC73EB490ECBFF255969761BA /* CBFlashyTabBarController.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/CBFlashyTabBarController";
 			sourceTree = "<group>";
 		};
 		6C941E424B42BAE99E5C050035F1897F /* Pods-DocScan-DocScanUITests */ = {
@@ -163,10 +214,27 @@
 			path = "Target Support Files/Pods-DocScan-DocScanUITests";
 			sourceTree = "<group>";
 		};
-		936C879775711D6DC5C9C4EBB3238347 /* Pods */ = {
+		87AEBA7F6C0378EB490433A1F56945CA /* CBFlashyTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				A65448DC47C4FD49023A29F3769105CD /* TDCRoundButton */,
+				2BEA7ED0CC3D442E2CD33AEBD627BB01 /* CBFlashyTabBar.swift */,
+				DAFC426B4612B708A726DB3F4F4D68E2 /* CBFlashyTabBarController.swift */,
+				43304BAF44C7F2246F037F6BC2D40C1E /* CBTabBarButton.swift */,
+				C5FCCDA99D210E8B9EAE47FD9AD1B2D0 /* CBTabItemAnimation.swift */,
+				2E043F668F2EAB55E2B792252627CADF /* CBTabItemBasicAnimation.swift */,
+				CC4927495B673C053EA86FF2E238274A /* CBTabItemDeselectAnimation.swift */,
+				AE8A1C17799E9E7886601455BCCAA864 /* CBTabItemSelectAnimation.swift */,
+				231BFBE7D975F0C3CE52E37797E6B1F2 /* Support Files */,
+			);
+			name = CBFlashyTabBarController;
+			path = CBFlashyTabBarController;
+			sourceTree = "<group>";
+		};
+		8F1F2A991CD5FCFF2EA58819D4D42836 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87AEBA7F6C0378EB490433A1F56945CA /* CBFlashyTabBarController */,
+				B877F6EFAC0CEAD6B6DDDC1915889447 /* TDCRoundButton */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -187,11 +255,11 @@
 			path = "Target Support Files/Pods-DocScanTests";
 			sourceTree = "<group>";
 		};
-		A65448DC47C4FD49023A29F3769105CD /* TDCRoundButton */ = {
+		B877F6EFAC0CEAD6B6DDDC1915889447 /* TDCRoundButton */ = {
 			isa = PBXGroup;
 			children = (
-				C488C27F532D674498B215CFF716A608 /* TDCRoundButton.swift */,
-				EA01CF117ED9D67C036C473AE6995BBF /* Support Files */,
+				AB3C144697FD2F58EC0D766924984997 /* TDCRoundButton.swift */,
+				EDD138F8252437A30172EC47865AD436 /* Support Files */,
 			);
 			name = TDCRoundButton;
 			path = TDCRoundButton;
@@ -205,13 +273,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		CDA8BB5D23A704C90CE1E85D8BFFD002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07D4E958BAD766CBA1D48DEB63D524C9 /* CBFlashyTabBarController.framework */,
+				901A7CAB8301EF8E3B1607BB9BC03FE3 /* Pods_DocScan.framework */,
+				92880DD233CF4385A9AACA95517602BA /* Pods_DocScan_DocScanUITests.framework */,
+				32BB090BAFCA534C05FFBAB09381D2AA /* Pods_DocScanTests.framework */,
+				26A0CDDDED6408C4E80581E63C61BCDB /* TDCRoundButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				936C879775711D6DC5C9C4EBB3238347 /* Pods */,
-				46E9E4E8603CEB30F4CF47A49EF258B5 /* Products */,
+				8F1F2A991CD5FCFF2EA58819D4D42836 /* Pods */,
+				CDA8BB5D23A704C90CE1E85D8BFFD002 /* Products */,
 				17C685E861BA054EFC78BBC296A003E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -224,16 +304,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EA01CF117ED9D67C036C473AE6995BBF /* Support Files */ = {
+		EDD138F8252437A30172EC47865AD436 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EBAFDA2F61740C5349F973E1343BC8A1 /* TDCRoundButton.modulemap */,
-				C2FEC70F470B3F2D673DC5BBB0A71508 /* TDCRoundButton-dummy.m */,
-				A158AE7AC1EF317B5E7486A4859F8137 /* TDCRoundButton-Info.plist */,
-				5C14A0C3681EB6E1C08007EB06932821 /* TDCRoundButton-prefix.pch */,
-				4A4CE80AB040A0E31A2139EAF373DB98 /* TDCRoundButton-umbrella.h */,
-				90C6C1C1C133A2976E3564F1FE1C9CD4 /* TDCRoundButton.debug.xcconfig */,
-				0CA5C0EFE485B43A02E7FB33C20FFD2C /* TDCRoundButton.release.xcconfig */,
+				87891099D307F17BAE18CE523C9EB542 /* TDCRoundButton.modulemap */,
+				54D27436DC0C2281E9F693F23C70A11A /* TDCRoundButton-dummy.m */,
+				3A00091DD0F6020BC7C9C6B55D656450 /* TDCRoundButton-Info.plist */,
+				7676BFC8CB32984BF9EDBDF9CBDCA913 /* TDCRoundButton-prefix.pch */,
+				FDA3ACB6B6264F51514F98186F589EC4 /* TDCRoundButton-umbrella.h */,
+				408A523D388D256DD8A80113FB29BD7B /* TDCRoundButton.debug.xcconfig */,
+				4922DDAE09986408EF53A38F7E37BFC2 /* TDCRoundButton.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TDCRoundButton";
@@ -267,19 +347,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		751B14AA1FE2112E4C192E8ACD010BF7 /* Headers */ = {
+		62F1978C0B37B6CF768BDE43DCEC1CA1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA593E0116964C97D9E240329C7E898 /* Pods-DocScan-umbrella.h in Headers */,
+				4DCBE3FD9516343EC2F88E21C98F6545 /* CBFlashyTabBarController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87816089436D44F93CD8C1D3B3F59594 /* Headers */ = {
+		67BC0AD41E1562E0C6C59F6C895BE002 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2712A88B26382767E19B140A7CC4D7D9 /* Pods-DocScan-DocScanUITests-umbrella.h in Headers */,
+				B6B27DCFF1AE3D3A8EB4C340A8964332 /* Pods-DocScan-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,22 +371,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6FD0057F146E346BF11700DC1537E94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C703A55806DE911713A21A745C593EA5 /* Pods-DocScan-DocScanUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		25999B3C59804F268026E426B5F23AC5 /* Pods-DocScan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E3C97CB2CB0811BFEDE1156AF54C9E0 /* Build configuration list for PBXNativeTarget "Pods-DocScan" */;
+			buildConfigurationList = 78B68C070861FC1AB3DF6E1361AC759C /* Build configuration list for PBXNativeTarget "Pods-DocScan" */;
 			buildPhases = (
-				751B14AA1FE2112E4C192E8ACD010BF7 /* Headers */,
-				18068E9C1655386FC76BFF9C3E32409F /* Sources */,
-				C401CBC22CE46BD1AA91893EFDCA9BDD /* Frameworks */,
-				3E09E60B3E00F0C09B808808CD1C89EF /* Resources */,
+				67BC0AD41E1562E0C6C59F6C895BE002 /* Headers */,
+				C873501E10A022822F92DE7B5DA80EB4 /* Sources */,
+				AAB48942E0F5B1AD3AAC1680585B2F99 /* Frameworks */,
+				B7AD5A67F8910E668BD802260D92605C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				06CE4468E5A04DC27F666564612A83AD /* PBXTargetDependency */,
+				6940CE6DC1C26C4264F5F0A613A17D03 /* PBXTargetDependency */,
+				199CA6832A657AE516C4FA747828E9CD /* PBXTargetDependency */,
 			);
 			name = "Pods-DocScan";
 			productName = "Pods-DocScan";
@@ -331,6 +420,24 @@
 			productReference = 26A0CDDDED6408C4E80581E63C61BCDB /* TDCRoundButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5737872A76EFCB2A97F445D9434307C7 /* CBFlashyTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4EA1075817653C75969BB78FDE8A3E2 /* Build configuration list for PBXNativeTarget "CBFlashyTabBarController" */;
+			buildPhases = (
+				62F1978C0B37B6CF768BDE43DCEC1CA1 /* Headers */,
+				2C7B8389C126323DF24AC36765366A63 /* Sources */,
+				3BEE1D632B16A9ACCFF58495438976F8 /* Frameworks */,
+				79005B9247B9C53EC894D5771438BAC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBFlashyTabBarController;
+			productName = CBFlashyTabBarController;
+			productReference = 07D4E958BAD766CBA1D48DEB63D524C9 /* CBFlashyTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		94BCF237E52380254E885A650D0AC9CD /* Pods-DocScanTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B00EEF2368078199D52C63BF30484E6 /* Build configuration list for PBXNativeTarget "Pods-DocScanTests" */;
@@ -343,7 +450,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				171B2E33B61E4A942B92F845A2209347 /* PBXTargetDependency */,
+				A6247C65E5D3C5656D6FDD759F1B1D4E /* PBXTargetDependency */,
 			);
 			name = "Pods-DocScanTests";
 			productName = "Pods-DocScanTests";
@@ -352,17 +459,18 @@
 		};
 		A506A1F09868662D504B18125867302B /* Pods-DocScan-DocScanUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9B0EBC32D9A053740B8736FC29FDBB2 /* Build configuration list for PBXNativeTarget "Pods-DocScan-DocScanUITests" */;
+			buildConfigurationList = 1B6D52724F87C1860C284BC6EE7F3B68 /* Build configuration list for PBXNativeTarget "Pods-DocScan-DocScanUITests" */;
 			buildPhases = (
-				87816089436D44F93CD8C1D3B3F59594 /* Headers */,
-				ECF0F7CC473D631F26E6A0065927E753 /* Sources */,
-				BC5FC325F15F351BCA075BDA927C5DFB /* Frameworks */,
-				327B78E129C3A08CFE238E860668A707 /* Resources */,
+				F6FD0057F146E346BF11700DC1537E94 /* Headers */,
+				21A518F6C0666C2AE9700A762570DFFB /* Sources */,
+				D0812A785D49901D91CF5D37D77CF9B5 /* Frameworks */,
+				8B1EC80676F58511DCC7708B429EB1C4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				98501A8150DDB7CF18395F59002739AB /* PBXTargetDependency */,
+				F75E5BD6B496B55886A7B62B03F00A2D /* PBXTargetDependency */,
+				7762F8A86D3AA600EE8C7091E3D97B6F /* PBXTargetDependency */,
 			);
 			name = "Pods-DocScan-DocScanUITests";
 			productName = "Pods-DocScan-DocScanUITests";
@@ -379,7 +487,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -387,10 +495,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 46E9E4E8603CEB30F4CF47A49EF258B5 /* Products */;
+			productRefGroup = CDA8BB5D23A704C90CE1E85D8BFFD002 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				5737872A76EFCB2A97F445D9434307C7 /* CBFlashyTabBarController */,
 				25999B3C59804F268026E426B5F23AC5 /* Pods-DocScan */,
 				A506A1F09868662D504B18125867302B /* Pods-DocScan-DocScanUITests */,
 				94BCF237E52380254E885A650D0AC9CD /* Pods-DocScanTests */,
@@ -407,14 +516,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		327B78E129C3A08CFE238E860668A707 /* Resources */ = {
+		79005B9247B9C53EC894D5771438BAC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E09E60B3E00F0C09B808808CD1C89EF /* Resources */ = {
+		8B1EC80676F58511DCC7708B429EB1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7AD5A67F8910E668BD802260D92605C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,11 +555,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18068E9C1655386FC76BFF9C3E32409F /* Sources */ = {
+		21A518F6C0666C2AE9700A762570DFFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF0A2425D60391DF70212B46C3FA6D9 /* Pods-DocScan-dummy.m in Sources */,
+				8472F26CD9D775708DEE69BAF2D90D60 /* Pods-DocScan-DocScanUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7B8389C126323DF24AC36765366A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8986CC7B2C9C15F1917E798117F644DC /* CBFlashyTabBar.swift in Sources */,
+				E82E20D4B21D30CC8A06C5CF540FDCF8 /* CBFlashyTabBarController-dummy.m in Sources */,
+				B62CE540AEC6C3C0CCEBC83B4EC04514 /* CBFlashyTabBarController.swift in Sources */,
+				5A15123627499A1087BD267801BA5BFC /* CBTabBarButton.swift in Sources */,
+				87E32330C480E15EA28EE9F7D772696F /* CBTabItemAnimation.swift in Sources */,
+				0BA46128F8D7479CCD09B2E88C109DB5 /* CBTabItemBasicAnimation.swift in Sources */,
+				92492D08B5FF542DDD2DF65BBEC64727 /* CBTabItemDeselectAnimation.swift in Sources */,
+				A211362205D10B7E1EB641AC03BB97EF /* CBTabItemSelectAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C873501E10A022822F92DE7B5DA80EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AD841D287F70BBA71556417E7F02B9 /* Pods-DocScan-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,34 +595,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECF0F7CC473D631F26E6A0065927E753 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFF6A7338E4FA23BC9F51E3452F94656 /* Pods-DocScan-DocScanUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06CE4468E5A04DC27F666564612A83AD /* PBXTargetDependency */ = {
+		199CA6832A657AE516C4FA747828E9CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TDCRoundButton;
 			target = 3BC1729E1A2A5FADB49B46C3DE5BF3DA /* TDCRoundButton */;
-			targetProxy = 3673DE54BD1B9B767F4D31327F5ABFEA /* PBXContainerItemProxy */;
+			targetProxy = B1D2104FB5E257A3F4D551AE87E89DB1 /* PBXContainerItemProxy */;
 		};
-		171B2E33B61E4A942B92F845A2209347 /* PBXTargetDependency */ = {
+		6940CE6DC1C26C4264F5F0A613A17D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CBFlashyTabBarController;
+			target = 5737872A76EFCB2A97F445D9434307C7 /* CBFlashyTabBarController */;
+			targetProxy = A57EEC5EDDB23351B8487725E09D8171 /* PBXContainerItemProxy */;
+		};
+		7762F8A86D3AA600EE8C7091E3D97B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TDCRoundButton;
+			target = 3BC1729E1A2A5FADB49B46C3DE5BF3DA /* TDCRoundButton */;
+			targetProxy = D652E7AEFB6452ABDFB75F2447473034 /* PBXContainerItemProxy */;
+		};
+		A6247C65E5D3C5656D6FDD759F1B1D4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DocScan";
 			target = 25999B3C59804F268026E426B5F23AC5 /* Pods-DocScan */;
-			targetProxy = 4AFC860362BA817B48B57A2527E7C547 /* PBXContainerItemProxy */;
+			targetProxy = C45B45249091E202E8CFA43A8F7D2C27 /* PBXContainerItemProxy */;
 		};
-		98501A8150DDB7CF18395F59002739AB /* PBXTargetDependency */ = {
+		F75E5BD6B496B55886A7B62B03F00A2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TDCRoundButton;
-			target = 3BC1729E1A2A5FADB49B46C3DE5BF3DA /* TDCRoundButton */;
-			targetProxy = 90596E954D12FF27029F8047220EA8A2 /* PBXContainerItemProxy */;
+			name = CBFlashyTabBarController;
+			target = 5737872A76EFCB2A97F445D9434307C7 /* CBFlashyTabBarController */;
+			targetProxy = DAA5A87B3CC9B4A1323853A0F240BEED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -550,7 +693,7 @@
 		};
 		158A086EF574753AE2745F004F50314C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CA5C0EFE485B43A02E7FB33C20FFD2C /* TDCRoundButton.release.xcconfig */;
+			baseConfigurationReference = 4922DDAE09986408EF53A38F7E37BFC2 /* TDCRoundButton.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -587,7 +730,7 @@
 		};
 		17FC499F868118F24AE5A9D16D81C7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90C6C1C1C133A2976E3564F1FE1C9CD4 /* TDCRoundButton.debug.xcconfig */;
+			baseConfigurationReference = 408A523D388D256DD8A80113FB29BD7B /* TDCRoundButton.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -621,7 +764,7 @@
 			};
 			name = Debug;
 		};
-		26B3737C6CA964A48F55ADD749E10BEB /* Debug */ = {
+		29123A3CB11F23E8E70C39B7EFED2494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 845B3E31AB389930847914826292FB93 /* Pods-DocScan-DocScanUITests.debug.xcconfig */;
 			buildSettings = {
@@ -659,9 +802,46 @@
 			};
 			name = Debug;
 		};
-		6A300E16B291F334914F501CE5F20669 /* Release */ = {
+		4A615550CE857EF958BADB9A859D5D5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE7136AF3AADD01CFB83EE93CE9F8784 /* Pods-DocScan-DocScanUITests.release.xcconfig */;
+			baseConfigurationReference = D01E18CCC73EB490ECBFF255969761BA /* CBFlashyTabBarController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CBFlashyTabBarController/CBFlashyTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CBFlashyTabBarController/CBFlashyTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CBFlashyTabBarController/CBFlashyTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = CBFlashyTabBarController;
+				PRODUCT_NAME = CBFlashyTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60E01B77DAB1381AECF404D11680DECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78233723E630A40C44A0B8CE8FB35784 /* Pods-DocScan.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -674,7 +854,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -683,7 +863,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -736,9 +916,9 @@
 			};
 			name = Debug;
 		};
-		778F4E46ED82A54F89D9A9325FDCF472 /* Debug */ = {
+		7AF4EE2242E6B2501006D63FAA7A51A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB3528C6E1B44A1373628415CED9ED4 /* Pods-DocScan.debug.xcconfig */;
+			baseConfigurationReference = DE7136AF3AADD01CFB83EE93CE9F8784 /* Pods-DocScan-DocScanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -751,7 +931,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -760,45 +940,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B9967E6286B270038B898DA1B7AD7C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78233723E630A40C44A0B8CE8FB35784 /* Pods-DocScan.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -851,6 +993,80 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C35C0DB2727403399E1193AB4211B864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB3528C6E1B44A1373628415CED9ED4 /* Pods-DocScan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DocScan/Pods-DocScan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBCE7B83C22199126FF5FE5B97D26F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F910DD24ED25EC4143DFBD095BA0AFF /* CBFlashyTabBarController.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CBFlashyTabBarController/CBFlashyTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CBFlashyTabBarController/CBFlashyTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CBFlashyTabBarController/CBFlashyTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = CBFlashyTabBarController;
+				PRODUCT_NAME = CBFlashyTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -919,6 +1135,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B6D52724F87C1860C284BC6EE7F3B68 /* Build configuration list for PBXNativeTarget "Pods-DocScan-DocScanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29123A3CB11F23E8E70C39B7EFED2494 /* Debug */,
+				7AF4EE2242E6B2501006D63FAA7A51A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2B00EEF2368078199D52C63BF30484E6 /* Build configuration list for PBXNativeTarget "Pods-DocScanTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -937,11 +1162,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E3C97CB2CB0811BFEDE1156AF54C9E0 /* Build configuration list for PBXNativeTarget "Pods-DocScan" */ = {
+		78B68C070861FC1AB3DF6E1361AC759C /* Build configuration list for PBXNativeTarget "Pods-DocScan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				778F4E46ED82A54F89D9A9325FDCF472 /* Debug */,
-				8B9967E6286B270038B898DA1B7AD7C4 /* Release */,
+				C35C0DB2727403399E1193AB4211B864 /* Debug */,
+				60E01B77DAB1381AECF404D11680DECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -955,11 +1180,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9B0EBC32D9A053740B8736FC29FDBB2 /* Build configuration list for PBXNativeTarget "Pods-DocScan-DocScanUITests" */ = {
+		D4EA1075817653C75969BB78FDE8A3E2 /* Build configuration list for PBXNativeTarget "CBFlashyTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26B3737C6CA964A48F55ADD749E10BEB /* Debug */,
-				6A300E16B291F334914F501CE5F20669 /* Release */,
+				EBCE7B83C22199126FF5FE5B97D26F64 /* Debug */,
+				4A615550CE857EF958BADB9A859D5D5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,6 +6,7 @@ target 'DocScan' do
 
   # Pods for DocScan
     pod 'TDCRoundButton'
+    pod 'CBFlashyTabBarController'
 
   target 'DocScanTests' do
     inherit! :search_paths

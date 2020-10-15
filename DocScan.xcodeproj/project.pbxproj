@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		224B380EA21D84C3C6237FBA /* Pods_DocScan_DocScanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */; };
 		40F9C8BE36B2F62300E4B886 /* Pods_DocScanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029CAE3389392B1C099BEED8 /* Pods_DocScanTests.framework */; };
 		64313192D2D248844F1182F1 /* Pods_DocScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DC432271E053DED0D7D6D /* Pods_DocScan.framework */; };
+		BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FAB1253857D50068A286 /* ScanVC.swift */; };
+		BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FABA253868C00068A286 /* SettingsTableVC.swift */; };
 		BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79425384428005F7B99 /* AppDelegate.swift */; };
 		BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79625384428005F7B99 /* SceneDelegate.swift */; };
-		BCFDF79925384428005F7B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79825384428005F7B99 /* ViewController.swift */; };
+		BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79825384428005F7B99 /* OnboardingVC.swift */; };
 		BCFDF79C25384428005F7B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFDF79A25384428005F7B99 /* Main.storyboard */; };
 		BCFDF79E2538442B005F7B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFDF79D2538442B005F7B99 /* Assets.xcassets */; };
 		BCFDF7A12538442B005F7B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFDF79F2538442B005F7B99 /* LaunchScreen.storyboard */; };
@@ -45,10 +47,12 @@
 		4323B7400DBFFA46C7FC78FC /* Pods-DocScanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScanTests.release.xcconfig"; path = "Target Support Files/Pods-DocScanTests/Pods-DocScanTests.release.xcconfig"; sourceTree = "<group>"; };
 		71D83E8ED577E3D45F1C799F /* Pods-DocScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScan.release.xcconfig"; path = "Target Support Files/Pods-DocScan/Pods-DocScan.release.xcconfig"; sourceTree = "<group>"; };
 		A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocScan_DocScanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC72FAB1253857D50068A286 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
+		BC72FABA253868C00068A286 /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		BCFDF79125384428005F7B99 /* DocScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFDF79425384428005F7B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFDF79625384428005F7B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCFDF79825384428005F7B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFDF79825384428005F7B99 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		BCFDF79B25384428005F7B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCFDF79D2538442B005F7B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFDF7A02538442B005F7B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				3660208806099CCD7B82E705 /* Pods-DocScanTests.debug.xcconfig */,
 				4323B7400DBFFA46C7FC78FC /* Pods-DocScanTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +116,35 @@
 				029CAE3389392B1C099BEED8 /* Pods_DocScanTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCCFDF05253845AC00A7F9A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BCFDF79A25384428005F7B99 /* Main.storyboard */,
+				BCFDF79F2538442B005F7B99 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BCCFDF06253845B500A7F9A5 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				BCFDF79825384428005F7B99 /* OnboardingVC.swift */,
+				BC72FAB1253857D50068A286 /* ScanVC.swift */,
+				BC72FABA253868C00068A286 /* SettingsTableVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		BCCFDF10253845C600A7F9A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCFDF79D2538442B005F7B99 /* Assets.xcassets */,
+				BCFDF79425384428005F7B99 /* AppDelegate.swift */,
+				BCFDF79625384428005F7B99 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		BCFDF78825384428005F7B99 = {
@@ -140,12 +172,9 @@
 		BCFDF79325384428005F7B99 /* DocScan */ = {
 			isa = PBXGroup;
 			children = (
-				BCFDF79425384428005F7B99 /* AppDelegate.swift */,
-				BCFDF79625384428005F7B99 /* SceneDelegate.swift */,
-				BCFDF79825384428005F7B99 /* ViewController.swift */,
-				BCFDF79A25384428005F7B99 /* Main.storyboard */,
-				BCFDF79D2538442B005F7B99 /* Assets.xcassets */,
-				BCFDF79F2538442B005F7B99 /* LaunchScreen.storyboard */,
+				BCCFDF06253845B500A7F9A5 /* VCs */,
+				BCCFDF05253845AC00A7F9A5 /* Storyboards */,
+				BCCFDF10253845C600A7F9A5 /* Supporting Files */,
 				BCFDF7A22538442B005F7B99 /* Info.plist */,
 			);
 			path = DocScan;
@@ -407,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFDF79925384428005F7B99 /* ViewController.swift in Sources */,
+				BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */,
+				BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */,
+				BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */,
 				BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */,
 				BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */,
 			);
@@ -594,7 +625,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tdc.DocScan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdc.comonents.cellselection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -615,7 +646,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tdc.DocScan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdc.comonents.cellselection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
