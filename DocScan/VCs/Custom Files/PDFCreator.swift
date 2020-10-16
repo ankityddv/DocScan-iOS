@@ -10,10 +10,12 @@ import PDFKit
 
 class PDFCreator: NSObject {
     
-    let image: UIImage
-  
-    init(image: UIImage) {
-        self.image = image
+    let image1: UIImage
+    let image2: UIImage
+    
+    init(image1: UIImage, image2: UIImage) {
+        self.image1 = image1
+        self.image2 = image2
     }
   
     func CreatePDF() -> Data {
@@ -35,7 +37,9 @@ class PDFCreator: NSObject {
             // 5
             context.beginPage()
             // 6
-            _ = addImage(pageRect: pageRect, imageTop: 18.0)
+            _ = addImage(pageRect: pageRect, imageTop: 0.0)
+            context.beginPage()
+            _ = addImage2(pageRect: pageRect, imageTop: 0.0)
         }
         return data
     }
@@ -45,18 +49,39 @@ class PDFCreator: NSObject {
         let maxHeight = pageRect.height * 1
         let maxWidth = pageRect.width * 1
         // 2
-        let aspectWidth = maxWidth / image.size.width
-        let aspectHeight = maxHeight / image.size.height
+        let aspectWidth = maxWidth / image1.size.width
+        let aspectHeight = maxHeight / image1.size.height
         let aspectRatio = min(aspectWidth, aspectHeight)
         // 3
-        let scaledWidth = image.size.width * aspectRatio
-        let scaledHeight = image.size.height * aspectRatio
+        let scaledWidth = image1.size.width * aspectRatio
+        let scaledHeight = image1.size.height * aspectRatio
         // 4
         let imageX = (pageRect.width - scaledWidth) / 2.0
         let imageRect = CGRect(x: imageX, y: imageTop,
                            width: scaledWidth, height: scaledHeight)
         // 5
-        image.draw(in: imageRect)
+        image1.draw(in: imageRect)
+        return imageRect.origin.y + imageRect.size.height
+    }
+    
+    func addImage2(pageRect: CGRect, imageTop: CGFloat) -> CGFloat {
+        
+        // 1
+        let maxHeight = pageRect.height * 1
+        let maxWidth = pageRect.width * 1
+        // 2
+        let aspectWidth = maxWidth / image2.size.width
+        let aspectHeight = maxHeight / image2.size.height
+        let aspectRatio = min(aspectWidth, aspectHeight)
+        // 3
+        let scaledWidth = image2.size.width * aspectRatio
+        let scaledHeight = image2.size.height * aspectRatio
+        // 4
+        let imageX = (pageRect.width - scaledWidth) / 2.0
+        let imageRect = CGRect(x: imageX, y: imageTop,
+                           width: scaledWidth, height: scaledHeight)
+        // 5
+        image2.draw(in: imageRect)
         return imageRect.origin.y + imageRect.size.height
     }
     

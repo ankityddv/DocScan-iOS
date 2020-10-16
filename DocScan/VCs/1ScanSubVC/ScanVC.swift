@@ -10,18 +10,23 @@ import PDFKit
 import Vision
 import VisionKit
 
-class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate{
+class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource{
     
-    var myCollectionView: UICollectionView?
-    
-    @IBOutlet weak var ScannedImageView: UIImageView!
     @IBOutlet var emptyView: UIView!
     @IBOutlet weak var addBttn: UIBarButtonItem!
     
+    let imgArr = ["FolderIconPurple","FolderIconPink","FolderIconOrange"]
+    let nameArr = ["Document 1","Document 2","Document 3"]
+    let dateArr = ["17.10.2020","10.10.2020","11.10.2020"]
+    
     @IBAction func showaddTapped(_ sender: Any) {
+        showCamera()
+    }
+    
+    @objc func showCamera(){
         let actionSheet = UIAlertController(title: "Select Photo", message: "Where do you want to select a photo?", preferredStyle: .actionSheet)
         
-        let photoAction = UIAlertAction(title: "Photos", style: .default) { (action) in
+        let photoAction = UIAlertAction(title: "Choose an image", style: .default) { (action) in
           if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
             let photoPicker = UIImagePickerController()
             photoPicker.delegate = self
@@ -33,7 +38,7 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         }
         actionSheet.addAction(photoAction)
         
-        let cameraAction = UIAlertAction(title: "Scan", style: .default) { [self] (action) in
+        let cameraAction = UIAlertAction(title: "Scan an image", style: .default) { [self] (action) in
           configureDocumentView()
         }
         actionSheet.addAction(cameraAction)
@@ -43,9 +48,6 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         
         self.present(actionSheet, animated: true, completion: nil)
     }
-    //HiddenButton
-    @IBAction func showMenu(_ sender: Any) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,35 +56,26 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         // To hide the top line
         //self.tabBarController?.tabBar.shadowImage = UIImage()
         //self.tabBarController?.tabBar.backgroundImage = UIImage()
-        createCollView()
         setUpMenu()
     }
     
-    
-    //MARK:- To create the collectionView on the page.
-    func createCollView(){
-        let view = UIView()
-        view.backgroundColor = UIColor(named:"AppGrayColor")
-                
-            let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-            layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-            layout.itemSize = CGSize(width: 180, height: 180)
-                
-            myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-            myCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-            myCollectionView?.backgroundColor = UIColor(named:"AppGrayColor")
-            
-            myCollectionView?.dataSource = self
-            myCollectionView?.delegate = self
-        
-            view.addSubview(myCollectionView ?? UICollectionView())
-                
-            self.view = view
+    //MARK:- To create the collectionView on the page
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:FoldersCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoldersCVCell", for: indexPath) as! FoldersCVCell
+        cell.imageView.image = UIImage(named: imgArr[indexPath.row])
+        cell.dateLabel.text = dateArr[indexPath.row]
+        cell.documentName.text = nameArr[indexPath.row]
+        cell.menuBttn.addTarget(self, action: #selector(showCamera), for: .touchUpInside)
+        cell.layer.cornerRadius = 20
+        return cell
+    }
     //MARK:- Set up uimenu Button
-    func setUpMenu(){
+    
+    @objc func setUpMenu(){
         let saveAction = UIAction(title: "") { action in
             // whatever
             print("save action!")
@@ -125,7 +118,6 @@ extension ScanVC:VNDocumentCameraViewControllerDelegate {
         for pageNumber in 0..<scan.pageCount {
             let image = scan.imageOfPage(at: pageNumber)
             print(image)
-            ScannedImageView.image = scan.imageOfPage(at: 0)
         }
         controller.dismiss(animated: true, completion: nil)
     }
@@ -138,26 +130,5 @@ extension ScanVC:VNDocumentCameraViewControllerDelegate {
         print(error)
         
         controller.dismiss(animated: true)
-    }
-}
-
-extension ScanVC: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10 // How many cells to display
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
-        myCell.backgroundColor = UIColor(named:"AppWhiteColor")
-        myCell.layer.cornerRadius = 20
-        myCell.layer.masksToBounds = true
-        return myCell
-    }
-}
-// CollectionView shits
-extension ScanVC: UICollectionViewDelegate {
- 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("User tapped on item \(indexPath.row)")
     }
 }

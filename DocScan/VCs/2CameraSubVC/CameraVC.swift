@@ -14,7 +14,6 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
     
     //var arrImages = [UIImage]()
     var arrImages = ["appIcon","appIcon"]
-    
     var pdfView: PDFView!
     
     @IBOutlet weak var myCollectionView: UICollectionView!
@@ -30,6 +29,8 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
         // To hide the top line
         self.navigationController?.navigationBar.shadowImage = UIImage()
         configureDocumentView()
+        imgView.layer.cornerRadius = 10
+        imgView2.layer.cornerRadius = 10
     }
     //MARK:- Set up collection View
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -49,7 +50,8 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
     @objc func shareAction() {
       // 1
       guard
-        let image = imgView.image
+        let imageV1 = imgView.image,
+        let imageV2 = imgView2.image
         else{
           // 2
           let alert = UIAlertController(title: "Can't share the file!", message: "Please scan the file and try agin ☺️", preferredStyle: .alert)
@@ -59,7 +61,7 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
       }
       
       // 3
-      let pdfCreator = PDFCreator(image: image)
+      let pdfCreator = PDFCreator(image1: imageV1, image2: imageV2)
       let pdfData = pdfCreator.CreatePDF()
       let vc = UIActivityViewController(activityItems: [pdfData], applicationActivities: [])
       present(vc, animated: true, completion: nil)
@@ -82,8 +84,9 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
       if segue.identifier == "previewSegue" {
         guard let vc = segue.destination as? PDFPreviewViewController else { return }
         
-        if let image = imgView.image {
-          let pdfCreator = PDFCreator(image: image)
+        if let imageView1 = imgView.image,
+           let imageView2 = imgView2.image{
+          let pdfCreator = PDFCreator(image1: imageView1, image2: imageView2)
           vc.documentData = pdfCreator.CreatePDF()
         }
       }

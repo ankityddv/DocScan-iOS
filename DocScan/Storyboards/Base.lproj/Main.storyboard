@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XVK-aW-cDw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -157,7 +157,7 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-288.40579710144931" y="81.696428571428569"/>
+            <point key="canvasLocation" x="-248" y="82"/>
         </scene>
         <!--DocScan-->
         <scene sceneID="c6O-n8-uKb">
@@ -167,46 +167,71 @@ save any of your data on servers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1W-eI-xut" customClass="ShadowView" customModule="DocScan" customModuleProvider="target">
-                                <rect key="frame" x="231" y="630" width="163" height="50"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-pc-gz0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="839"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-sK-oQG">
-                                        <rect key="frame" x="8" y="7" width="138" height="36"/>
+                                <color key="backgroundColor" name="AppGrayColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="10" id="vkE-4V-Ekh">
+                                    <size key="itemSize" width="170" height="191"/>
+                                    <size key="estimatedItemSize" width="170" height="191"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoldersCVCell" id="iuP-wX-KEV" customClass="FoldersCVCell" customModule="DocScan" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="25" width="170" height="191"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Menu">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gy8-rv-jlJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="191"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mT9-vF-q0p">
+                                                    <rect key="frame" x="14" y="26" width="80" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rich dad poor dad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tq-Fe-Ird">
+                                                    <rect key="frame" x="15" y="128" width="133" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24.00.14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds0-lM-Wdo">
+                                                    <rect key="frame" x="15" y="150" width="112" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYB-Jz-auX">
+                                                    <rect key="frame" x="146" y="26" width="14" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="AppBlackColor"/>
+                                                    <state key="normal" image="MenuBttn"/>
+                                                </button>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="AppWhiteColor"/>
+                                        <size key="customSize" width="170" height="191"/>
                                         <connections>
-                                            <action selector="showMenu:" destination="gra-LP-s25" eventType="touchUpInside" id="DNu-S2-ULj"/>
+                                            <outlet property="dateLabel" destination="ds0-lM-Wdo" id="KLJ-oV-HmW"/>
+                                            <outlet property="documentName" destination="0Tq-Fe-Ird" id="lVi-mf-mmp"/>
+                                            <outlet property="imageView" destination="mT9-vF-q0p" id="pfN-9x-t2G"/>
+                                            <outlet property="menuBttn" destination="KYB-Jz-auX" id="pal-hA-YgK"/>
                                         </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="ButtonColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" name="ButtonColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.29999999999999999"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-PJ-2Lz">
-                                <rect key="frame" x="31" y="162" width="353" height="429"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="gra-LP-s25" id="tgi-yE-Yj1"/>
+                                    <outlet property="delegate" destination="gra-LP-s25" id="xvx-7t-6Da"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UXH-cY-G8H"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="DocScan" id="QZu-ZN-G4w">
+                    <navigationItem key="navigationItem" title="DocScan" largeTitleDisplayMode="always" id="QZu-ZN-G4w">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="fD3-sX-Dtq">
                             <color key="tintColor" name="AppBlackColor"/>
                             <connections>
@@ -215,7 +240,6 @@ save any of your data on servers.</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="ScannedImageView" destination="Eec-PJ-2Lz" id="qdZ-Ue-gKQ"/>
                         <outlet property="addBttn" destination="fD3-sX-Dtq" id="fre-Qd-d6X"/>
                         <outlet property="emptyView" destination="4uk-0x-Pah" id="6Kz-hp-6HE"/>
                     </connections>
@@ -441,7 +465,7 @@ save any of your data on servers.</string>
             </objects>
             <point key="canvasLocation" x="3300" y="82"/>
         </scene>
-        <!--Camera-->
+        <!--Scan-->
         <scene sceneID="A9D-nh-Ucn">
             <objects>
                 <viewController storyboardIdentifier="CameraVC" id="bDT-9I-dNJ" customClass="CameraVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
@@ -449,12 +473,8 @@ save any of your data on servers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-hw-ygr">
-                                <rect key="frame" x="20" y="638" width="114" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-fk-13Y">
-                                <rect key="frame" x="0.0" y="282" width="414" height="286"/>
+                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-fk-13Y">
+                                <rect key="frame" x="0.0" y="462" width="414" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AppGrayColor"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
@@ -499,14 +519,14 @@ save any of your data on servers.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scanned Pages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-pg-Dtc">
-                                <rect key="frame" x="28" y="259" width="88" height="15"/>
+                                <rect key="frame" x="28" y="244" width="88" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Document" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-Q7-T7Z" customClass="CustomTextField" customModule="DocScan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="159" width="374" height="50"/>
+                                <rect key="frame" x="20" y="164" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AppWhiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -520,21 +540,25 @@ save any of your data on servers.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIW-hR-5ZX">
-                                <rect key="frame" x="150" y="638" width="114" height="121"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-hw-ygr">
+                                <rect key="frame" x="28" y="279" width="170" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIW-hR-5ZX">
+                                <rect key="frame" x="220" y="279" width="170" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3kn-HA-UAx"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Camera" id="ELY-Kj-Oz6">
-                        <barButtonItem key="leftBarButtonItem" image="doc" catalog="system" id="xNC-U4-X2S">
+                    <navigationItem key="navigationItem" title="Scan" id="ELY-Kj-Oz6">
+                        <barButtonItem key="leftBarButtonItem" title="Preview" id="xNC-U4-X2S">
                             <connections>
                                 <segue destination="Hlb-IF-8JL" kind="show" identifier="previewSegue" id="kUs-wJ-Kfn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.up" catalog="system" id="K2Y-Cr-Xsu">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="K2Y-Cr-Xsu">
                             <connections>
                                 <action selector="shareBttnAction:" destination="bDT-9I-dNJ" id="0Pq-3R-scz"/>
                             </connections>
@@ -559,7 +583,7 @@ save any of your data on servers.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rx-Wb-dM1" customClass="PDFView">
-                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -572,7 +596,7 @@ save any of your data on servers.</string>
                             <constraint firstItem="7rx-Wb-dM1" firstAttribute="leading" secondItem="JMZ-7K-uzY" secondAttribute="leading" id="vAN-DK-vTK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Preview" largeTitleDisplayMode="never" id="epv-Cr-dW3"/>
+                    <navigationItem key="navigationItem" title="Preview" id="epv-Cr-dW3"/>
                     <connections>
                         <outlet property="pdfView" destination="7rx-Wb-dM1" id="Q3j-eC-Y25"/>
                     </connections>
@@ -612,12 +636,11 @@ save any of your data on servers.</string>
     <color key="tintColor" name="AppBlackColor"/>
     <resources>
         <image name="Highlights" width="12" height="21"/>
+        <image name="MenuBttn" width="4" height="15"/>
         <image name="Settings" width="21" height="14"/>
         <image name="appIcon" width="1024" height="1024"/>
         <image name="camera" catalog="system" width="128" height="94"/>
-        <image name="doc" catalog="system" width="115" height="128"/>
         <image name="folder" catalog="system" width="128" height="97"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="AppBlackColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

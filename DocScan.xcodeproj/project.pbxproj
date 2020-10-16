@@ -34,6 +34,7 @@
 		BCFDF7A12538442B005F7B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFDF79F2538442B005F7B99 /* LaunchScreen.storyboard */; };
 		BCFDF7AC2538442C005F7B99 /* DocScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF7AB2538442C005F7B99 /* DocScanTests.swift */; };
 		BCFDF7B72538442C005F7B99 /* DocScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF7B62538442C005F7B99 /* DocScanUITests.swift */; };
+		BCFF01D4253A20B00052CBDB /* FoldersCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF01D3253A20B00052CBDB /* FoldersCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		BCFDF7B22538442C005F7B99 /* DocScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFDF7B62538442C005F7B99 /* DocScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocScanUITests.swift; sourceTree = "<group>"; };
 		BCFDF7B82538442C005F7B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF01D3253A20B00052CBDB /* FoldersCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersCVCell.swift; sourceTree = "<group>"; };
 		D45DC432271E053DED0D7D6D /* Pods_DocScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56C278578C5AED2429D4153 /* Pods-DocScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScan.debug.xcconfig"; path = "Target Support Files/Pods-DocScan/Pods-DocScan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				BC72FAB1253857D50068A286 /* ScanVC.swift */,
+				BCFF01D3253A20B00052CBDB /* FoldersCVCell.swift */,
 			);
 			path = 1ScanSubVC;
 			sourceTree = "<group>";
@@ -168,10 +171,8 @@
 		BC91136B253871040029C0F0 /* Custom Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC911366253870EC0029C0F0 /* ShadowView.swift */,
-				BCC7727D253A0E3500DF9054 /* CustomTextField.swift */,
+				BCC77282253A1A5800DF9054 /* CustomUIElements */,
 				BC93B3FD2539A3D800A8DCDB /* PDFCreator.swift */,
-				BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */,
 				BCC5244B25389E0700D717C3 /* AppIconService.swift */,
 				BCFDF79825384428005F7B99 /* OnboardingVC.swift */,
 			);
@@ -186,6 +187,16 @@
 				BC504CAD2538A57B00DB1870 /* appIconsCell.swift */,
 			);
 			path = 3SettingsSubVC;
+			sourceTree = "<group>";
+		};
+		BCC77282253A1A5800DF9054 /* CustomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				BC911366253870EC0029C0F0 /* ShadowView.swift */,
+				BCC7727D253A0E3500DF9054 /* CustomTextField.swift */,
+				BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */,
+			);
+			path = CustomUIElements;
 			sourceTree = "<group>";
 		};
 		BCCED4D025398FA700E71C0E /* 2CameraSubVC */ = {
@@ -528,6 +539,7 @@
 				BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */,
 				BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */,
 				BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */,
+				BCFF01D4253A20B00052CBDB /* FoldersCVCell.swift in Sources */,
 				BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */,
 				BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */,
 				BC93B49E2539BE8B00A8DCDB /* ScannedImgCell.swift in Sources */,
