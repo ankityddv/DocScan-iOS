@@ -15,7 +15,7 @@ class PDFCreator: NSObject {
     self.image = image
   }
   
-  func createFlyer() -> Data {
+  func CreatePDF() -> Data {
     // 1
     let pdfMetaData = [
       kCGPDFContextCreator: "DocScan",
@@ -23,12 +23,10 @@ class PDFCreator: NSObject {
     ]
     let format = UIGraphicsPDFRendererFormat()
     format.documentInfo = pdfMetaData as [String: Any]
-    
     // 2
     let pageWidth = 8.5 * 72.0
     let pageHeight = 11 * 72.0
     let pageRect = CGRect(x: 0, y: 0, width: pageWidth, height: pageHeight)
-    
     // 3
     let renderer = UIGraphicsPDFRenderer(bounds: pageRect, format: format)
     // 4

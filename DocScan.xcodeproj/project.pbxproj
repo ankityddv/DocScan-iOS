@@ -22,6 +22,7 @@
 		BC911367253870EC0029C0F0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC911366253870EC0029C0F0 /* ShadowView.swift */; };
 		BC93B3FE2539A3D800A8DCDB /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93B3FD2539A3D800A8DCDB /* PDFCreator.swift */; };
 		BC93B47F2539AD3400A8DCDB /* PDFPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93B47E2539AD3400A8DCDB /* PDFPreviewViewController.swift */; };
+		BC93B49E2539BE8B00A8DCDB /* ScannedImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93B49D2539BE8B00A8DCDB /* ScannedImgCell.swift */; };
 		BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5244B25389E0700D717C3 /* AppIconService.swift */; };
 		BCCED4CC25398FA200E71C0E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCED4CB25398FA200E71C0E /* CameraVC.swift */; };
 		BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79425384428005F7B99 /* AppDelegate.swift */; };
@@ -71,6 +72,7 @@
 		BC911366253870EC0029C0F0 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		BC93B3FD2539A3D800A8DCDB /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 		BC93B47E2539AD3400A8DCDB /* PDFPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewViewController.swift; sourceTree = "<group>"; };
+		BC93B49D2539BE8B00A8DCDB /* ScannedImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedImgCell.swift; sourceTree = "<group>"; };
 		BCC5244B25389E0700D717C3 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
 		BCCED4CB25398FA200E71C0E /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		BCFDF79125384428005F7B99 /* DocScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				BCCED4CB25398FA200E71C0E /* CameraVC.swift */,
+				BC93B49D2539BE8B00A8DCDB /* ScannedImgCell.swift */,
 				BC93B47E2539AD3400A8DCDB /* PDFPreviewViewController.swift */,
 			);
 			path = CameraSubVC;
@@ -524,6 +527,7 @@
 				BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */,
 				BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */,
 				BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */,
+				BC93B49E2539BE8B00A8DCDB /* ScannedImgCell.swift in Sources */,
 				BC271E0E2538CC4D009CFA4A /* CustomImageView.swift in Sources */,
 				BC504CAE2538A57B00DB1870 /* appIconsCell.swift in Sources */,
 				BC504CB32538A5A700DB1870 /* appIconsVC.swift in Sources */,

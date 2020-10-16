@@ -10,7 +10,10 @@ import Vision
 import VisionKit
 import PDFKit
 
-class CameraVC: UIViewController {
+class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    //var arrImages = [UIImage]()
+    var arrImages = ["Highlights","Search"]
     
     var pdfView: PDFView!
     
@@ -25,6 +28,20 @@ class CameraVC: UIViewController {
         // To hide the top line
         self.navigationController?.navigationBar.shadowImage = UIImage()
         configureDocumentView()
+    }
+    //MARK:- Set up collection View
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:ScannedImgCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ScannedImgCell", for: indexPath) as! ScannedImgCell
+        cell.scannedImg.image = UIImage(named: arrImages[indexPath.row])
+        cell.backgroundColor = UIColor(named:"AppWhiteColor")
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
+        return cell
     }
     
     //MARK:- Code below this is used to create the PDF and perform other actions.
@@ -42,7 +59,7 @@ class CameraVC: UIViewController {
       
       // 3
       let pdfCreator = PDFCreator(image: image)
-      let pdfData = pdfCreator.createFlyer()
+      let pdfData = pdfCreator.CreatePDF()
       let vc = UIActivityViewController(activityItems: [pdfData], applicationActivities: [])
       present(vc, animated: true, completion: nil)
     }
@@ -66,7 +83,7 @@ class CameraVC: UIViewController {
         
         if let image = imgView.image {
           let pdfCreator = PDFCreator(image: image)
-          vc.documentData = pdfCreator.createFlyer()
+          vc.documentData = pdfCreator.CreatePDF()
         }
       }
     }
@@ -85,9 +102,9 @@ class CameraVC: UIViewController {
 extension CameraVC:VNDocumentCameraViewControllerDelegate {
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
+        
         for pageNumber in 0..<scan.pageCount {
-            let image = scan.imageOfPage(at: pageNumber)
-            print(image)
+            let Outimage = scan.imageOfPage(at: pageNumber)
             imgView.image = scan.imageOfPage(at: 0)
         }
         controller.dismiss(animated: true, completion: nil)
@@ -104,6 +121,7 @@ extension CameraVC:VNDocumentCameraViewControllerDelegate {
     }
 }
 /*
+ // Use this to enable camer picker fucnctionality.
 extension CameraVC: UIImagePickerControllerDelegate {
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
     
