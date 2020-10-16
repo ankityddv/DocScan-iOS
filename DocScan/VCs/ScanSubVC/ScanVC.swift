@@ -20,7 +20,7 @@ class ScanVC: UIViewController{
                 
             let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
             layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-            layout.itemSize = CGSize(width: 180, height: 185)
+            layout.itemSize = CGSize(width: 180, height: 180)
                 
             myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
             myCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
