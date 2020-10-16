@@ -23,7 +23,10 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
     @IBAction func shareBttnAction(_ sender: Any) {
         shareAction()
     }
-
+    @IBAction func openCameraTapped(_ sender: Any) {
+        configureDocumentView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // To hide the top line

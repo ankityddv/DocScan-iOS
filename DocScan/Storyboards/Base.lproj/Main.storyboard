@@ -94,15 +94,17 @@ save any of your data on servers.</string>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-kb-Vkh">
-                                        <rect key="frame" x="48" y="48" width="30" height="30"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-kb-Vkh">
+                                        <rect key="frame" x="48" y="48.5" width="30" height="28.5"/>
+                                        <color key="tintColor" name="ButtonColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="8BR-ea-aHM"/>
                                             <constraint firstAttribute="width" constant="30" id="itV-7t-Xgb"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t3B-J2-Tkv">
-                                        <rect key="frame" x="48" y="116" width="30" height="30"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="t3B-J2-Tkv">
+                                        <rect key="frame" x="48" y="115.5" width="30" height="30"/>
+                                        <color key="tintColor" name="ButtonColor"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,7 +260,7 @@ save any of your data on servers.</string>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2586.9565217391305" y="-834.375"/>
+            <point key="canvasLocation" x="2587" y="-599"/>
         </scene>
         <!--Flashy Tab Bar Controller-->
         <scene sceneID="Hva-d4-S6m">
@@ -300,7 +302,7 @@ save any of your data on servers.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkV-FB-3an" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740.5797101449277" y="-834.375"/>
+            <point key="canvasLocation" x="1741" y="-599"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Qmc-7B-Mih">
@@ -330,67 +332,82 @@ save any of your data on servers.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
                         <sections>
-                            <tableViewSection headerTitle="General" id="0G9-Ko-e0Z">
+                            <tableViewSection headerTitle="General" footerTitle="Made with ❤️ by Ankit." id="0G9-Ko-e0Z">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="JEW-1D-ZKJ" style="IBUITableViewCellStyleDefault" id="pT1-QA-EXG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JEW-1D-ZKJ" imageView="CQj-w1-Ic8" style="IBUITableViewCellStyleDefault" id="pT1-QA-EXG">
                                         <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pT1-QA-EXG" id="sIH-70-ts0">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="App Icons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JEW-1D-ZKJ">
-                                                    <rect key="frame" x="30" y="0.0" width="324" height="43.5"/>
+                                                    <rect key="frame" x="60" y="0.0" width="275" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="app.gift" catalog="system" id="CQj-w1-Ic8">
+                                                    <rect key="frame" x="22.25" y="12.5" width="19.5" height="17.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="AppWhiteColor"/>
-                                        <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <segue destination="7jF-h4-IiT" kind="show" id="qJb-Tl-FLb"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Efb-Bt-Oel" style="IBUITableViewCellStyleDefault" id="LKF-3u-qpV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Efb-Bt-Oel" imageView="vTp-5V-YhU" style="IBUITableViewCellStyleDefault" id="LKF-3u-qpV">
                                         <rect key="frame" x="20" y="99" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LKF-3u-qpV" id="cID-qp-W6F">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Apperances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Efb-Bt-Oel">
-                                                    <rect key="frame" x="30" y="0.0" width="324" height="43.5"/>
+                                                    <rect key="frame" x="60" y="0.0" width="275" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="cloud" catalog="system" id="vTp-5V-YhU">
+                                                    <rect key="frame" x="21" y="14" width="22" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" systemColor="systemTealColor"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="AppWhiteColor"/>
-                                        <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XZt-AM-RwS" style="IBUITableViewCellStyleDefault" id="dI3-yO-pde">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="XZt-AM-RwS" imageView="EhJ-bP-BR6" style="IBUITableViewCellStyleDefault" id="dI3-yO-pde">
                                         <rect key="frame" x="20" y="142.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dI3-yO-pde" id="7tf-p9-jsw">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XZt-AM-RwS">
-                                                    <rect key="frame" x="30" y="0.0" width="324" height="43.5"/>
+                                                    <rect key="frame" x="60" y="0.0" width="275" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="message" catalog="system" id="EhJ-bP-BR6">
+                                                    <rect key="frame" x="21" y="12" width="22" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" systemColor="systemGreenColor"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="AppWhiteColor"/>
-                                        <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -414,10 +431,11 @@ save any of your data on servers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="WYz-cJ-JoQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="WYz-cJ-JoQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AppGrayColor"/>
+                                <inset key="separatorInset" minX="119" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appIconsCell" rowHeight="94" id="n9e-4X-xfJ" customClass="appIconsCell" customModule="DocScan" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.5" width="374" height="94"/>
@@ -463,7 +481,7 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNN-rt-TQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="82"/>
+            <point key="canvasLocation" x="3419" y="82"/>
         </scene>
         <!--Scan-->
         <scene sceneID="A9D-nh-Ucn">
@@ -558,11 +576,18 @@ save any of your data on servers.</string>
                                 <segue destination="Hlb-IF-8JL" kind="show" identifier="previewSegue" id="kUs-wJ-Kfn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Share" id="K2Y-Cr-Xsu">
-                            <connections>
-                                <action selector="shareBttnAction:" destination="bDT-9I-dNJ" id="0Pq-3R-scz"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="camera.viewfinder" catalog="system" id="mrK-WM-kCV">
+                                <connections>
+                                    <action selector="openCameraTapped:" destination="bDT-9I-dNJ" id="suj-vQ-FGH"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Share" id="K2Y-Cr-Xsu">
+                                <connections>
+                                    <action selector="shareBttnAction:" destination="bDT-9I-dNJ" id="0Pq-3R-scz"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="L7i-hw-ygr" id="SLv-Cv-ULN"/>
@@ -572,7 +597,7 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEz-NJ-qgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2586.9565217391305" y="892.63392857142856"/>
+            <point key="canvasLocation" x="2587" y="818"/>
         </scene>
         <!--Preview-->
         <scene sceneID="Efl-bh-Nlp">
@@ -603,7 +628,7 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi1-Zq-FDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300.0000000000005" y="892.63392857142856"/>
+            <point key="canvasLocation" x="3419" y="818"/>
         </scene>
         <!--Scan-->
         <scene sceneID="5N5-6k-7dx">
@@ -622,7 +647,7 @@ save any of your data on servers.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAq-Qx-3eK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740.5797101449277" y="892.63392857142856"/>
+            <point key="canvasLocation" x="1741" y="818"/>
         </scene>
     </scenes>
     <designables>
@@ -638,9 +663,14 @@ save any of your data on servers.</string>
         <image name="Highlights" width="12" height="21"/>
         <image name="MenuBttn" width="4" height="15"/>
         <image name="Settings" width="21" height="14"/>
+        <image name="app.gift" catalog="system" width="128" height="114"/>
         <image name="appIcon" width="1024" height="1024"/>
         <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="cloud" catalog="system" width="32" height="32"/>
+        <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="message" catalog="system" width="128" height="113"/>
         <namedColor name="AppBlackColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -655,6 +685,15 @@ save any of your data on servers.</string>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
