@@ -13,11 +13,13 @@ import PDFKit
 class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     
     //var arrImages = [UIImage]()
-    var arrImages = ["Highlights","Search"]
+    var arrImages = ["appIcon","appIcon"]
     
     var pdfView: PDFView!
     
+    @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var imgView2: UIImageView!
     
     @IBAction func shareBttnAction(_ sender: Any) {
         shareAction()
@@ -30,7 +32,6 @@ class CameraVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataS
         configureDocumentView()
     }
     //MARK:- Set up collection View
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrImages.count
     }
@@ -106,6 +107,7 @@ extension CameraVC:VNDocumentCameraViewControllerDelegate {
         for pageNumber in 0..<scan.pageCount {
             let Outimage = scan.imageOfPage(at: pageNumber)
             imgView.image = scan.imageOfPage(at: 0)
+            imgView2.image = scan.imageOfPage(at: 1)
         }
         controller.dismiss(animated: true, completion: nil)
     }

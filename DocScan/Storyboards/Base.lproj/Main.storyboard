@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XVK-aW-cDw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -164,7 +164,7 @@ save any of your data on servers.</string>
             <objects>
                 <viewController storyboardIdentifier="ScanVC" id="gra-LP-s25" customClass="ScanVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Th-db-7p1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1W-eI-xut" customClass="ShadowView" customModule="DocScan" customModuleProvider="target">
@@ -199,14 +199,9 @@ save any of your data on servers.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-PJ-2Lz">
-                                <rect key="frame" x="31" y="443" width="353" height="94"/>
+                                <rect key="frame" x="31" y="162" width="353" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDK-tz-V6c">
-                                <rect key="frame" x="20" y="20" width="170" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UXH-cY-G8H"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
@@ -239,7 +234,7 @@ save any of your data on servers.</string>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2587" y="-834"/>
+            <point key="canvasLocation" x="2586.9565217391305" y="-834.375"/>
         </scene>
         <!--Flashy Tab Bar Controller-->
         <scene sceneID="Hva-d4-S6m">
@@ -270,8 +265,8 @@ save any of your data on servers.</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XJo-ym-Hf1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Highlights" id="NbU-mS-lT5"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="SaP-9r-FVn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="SaP-9r-FVn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -289,8 +284,8 @@ save any of your data on servers.</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nwi-Mk-kM9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="woH-2Z-VIa"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Vf6-VN-62r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Vf6-VN-62r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -307,7 +302,7 @@ save any of your data on servers.</string>
             <objects>
                 <tableViewController id="FJl-wv-xDn" customClass="SettingsTableVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="HXx-eo-skX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
                         <sections>
@@ -392,7 +387,7 @@ save any of your data on servers.</string>
             <objects>
                 <viewController storyboardIdentifier="appIconsVC" hidesBottomBarWhenPushed="YES" id="7jF-h4-IiT" customClass="appIconsVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4v-uA-R2j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="WYz-cJ-JoQ">
@@ -451,26 +446,28 @@ save any of your data on servers.</string>
             <objects>
                 <viewController storyboardIdentifier="CameraVC" id="bDT-9I-dNJ" customClass="CameraVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Drv-BR-WUp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-hw-ygr">
-                                <rect key="frame" x="20" y="562" width="374" height="121"/>
+                                <rect key="frame" x="20" y="638" width="114" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-fk-13Y">
-                                <rect key="frame" x="0.0" y="44" width="414" height="286"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-fk-13Y">
+                                <rect key="frame" x="0.0" y="282" width="414" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AppGrayColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RlD-bi-lRU">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RlD-bi-lRU">
+                                    <size key="itemSize" width="221" height="284"/>
+                                    <size key="estimatedItemSize" width="221" height="284"/>
+                                    <size key="headerReferenceSize" width="20" height="0.0"/>
+                                    <size key="footerReferenceSize" width="20" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScannedImgCell" id="ohY-vp-M41" customClass="ScannedImgCell" customModule="DocScan" customModuleProvider="target">
-                                        <rect key="frame" x="96.5" y="0.0" width="221" height="284"/>
+                                        <rect key="frame" x="20" y="1" width="221" height="284"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QAr-4o-ang">
                                             <rect key="frame" x="0.0" y="0.0" width="221" height="284"/>
@@ -488,11 +485,45 @@ save any of your data on servers.</string>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C3C-oH-1qn">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="286"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R2t-sQ-hx7">
+                                    <rect key="frame" x="241" y="0.0" width="20" height="286"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="bDT-9I-dNJ" id="uUX-cb-L4p"/>
                                     <outlet property="delegate" destination="bDT-9I-dNJ" id="BLq-mP-DeI"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scanned Pages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-pg-Dtc">
+                                <rect key="frame" x="28" y="259" width="88" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Document" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-Q7-T7Z" customClass="CustomTextField" customModule="DocScan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="159" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AppWhiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIW-hR-5ZX">
+                                <rect key="frame" x="150" y="638" width="114" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3kn-HA-UAx"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
@@ -511,6 +542,8 @@ save any of your data on servers.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="L7i-hw-ygr" id="SLv-Cv-ULN"/>
+                        <outlet property="imgView2" destination="kIW-hR-5ZX" id="bTk-ZW-8Dy"/>
+                        <outlet property="myCollectionView" destination="T6C-fk-13Y" id="Ipn-kU-E8D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEz-NJ-qgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -522,11 +555,11 @@ save any of your data on servers.</string>
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="Hlb-IF-8JL" customClass="PDFPreviewViewController" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JMZ-7K-uzY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rx-Wb-dM1" customClass="PDFView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -539,7 +572,7 @@ save any of your data on servers.</string>
                             <constraint firstItem="7rx-Wb-dM1" firstAttribute="leading" secondItem="JMZ-7K-uzY" secondAttribute="leading" id="vAN-DK-vTK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Preview" id="epv-Cr-dW3"/>
+                    <navigationItem key="navigationItem" title="Preview" largeTitleDisplayMode="never" id="epv-Cr-dW3"/>
                     <connections>
                         <outlet property="pdfView" destination="7rx-Wb-dM1" id="Q3j-eC-Y25"/>
                     </connections>
@@ -554,8 +587,8 @@ save any of your data on servers.</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dVl-B0-R3K" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan" image="camera" catalog="system" id="nI4-95-KJx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="pTC-2r-34A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pTC-2r-34A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -571,6 +604,9 @@ save any of your data on servers.</string>
     <designables>
         <designable name="GjF-17-opS">
             <size key="intrinsicContentSize" width="62" height="30"/>
+        </designable>
+        <designable name="YtD-Q7-T7Z">
+            <size key="intrinsicContentSize" width="107" height="18.5"/>
         </designable>
     </designables>
     <color key="tintColor" name="AppBlackColor"/>

@@ -52,8 +52,8 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         // To hide the top line
         self.navigationController?.navigationBar.shadowImage = UIImage()
         // To hide the top line
-        self.tabBarController?.tabBar.shadowImage = UIImage()
-        self.tabBarController?.tabBar.backgroundImage = UIImage()
+        //self.tabBarController?.tabBar.shadowImage = UIImage()
+        //self.tabBarController?.tabBar.backgroundImage = UIImage()
         createCollView()
         setUpMenu()
     }
@@ -143,7 +143,7 @@ extension ScanVC:VNDocumentCameraViewControllerDelegate {
 
 extension ScanVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5 // How many cells to display
+        return 10 // How many cells to display
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

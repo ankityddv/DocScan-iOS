@@ -24,6 +24,7 @@
 		BC93B47F2539AD3400A8DCDB /* PDFPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93B47E2539AD3400A8DCDB /* PDFPreviewViewController.swift */; };
 		BC93B49E2539BE8B00A8DCDB /* ScannedImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93B49D2539BE8B00A8DCDB /* ScannedImgCell.swift */; };
 		BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5244B25389E0700D717C3 /* AppIconService.swift */; };
+		BCC7727E253A0E3500DF9054 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7727D253A0E3500DF9054 /* CustomTextField.swift */; };
 		BCCED4CC25398FA200E71C0E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCED4CB25398FA200E71C0E /* CameraVC.swift */; };
 		BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79425384428005F7B99 /* AppDelegate.swift */; };
 		BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79625384428005F7B99 /* SceneDelegate.swift */; };
@@ -74,6 +75,7 @@
 		BC93B47E2539AD3400A8DCDB /* PDFPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewViewController.swift; sourceTree = "<group>"; };
 		BC93B49D2539BE8B00A8DCDB /* ScannedImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedImgCell.swift; sourceTree = "<group>"; };
 		BCC5244B25389E0700D717C3 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
+		BCC7727D253A0E3500DF9054 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BCCED4CB25398FA200E71C0E /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		BCFDF79125384428005F7B99 /* DocScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFDF79425384428005F7B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,12 +146,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC271E152538CCD8009CFA4A /* ScanSubVC */ = {
+		BC271E152538CCD8009CFA4A /* 1ScanSubVC */ = {
 			isa = PBXGroup;
 			children = (
 				BC72FAB1253857D50068A286 /* ScanVC.swift */,
 			);
-			path = ScanSubVC;
+			path = 1ScanSubVC;
 			sourceTree = "<group>";
 		};
 		BC504CA02538A2C900DB1870 /* Alternate Icons */ = {
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BC911366253870EC0029C0F0 /* ShadowView.swift */,
+				BCC7727D253A0E3500DF9054 /* CustomTextField.swift */,
 				BC93B3FD2539A3D800A8DCDB /* PDFCreator.swift */,
 				BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */,
 				BCC5244B25389E0700D717C3 /* AppIconService.swift */,
@@ -175,24 +178,24 @@
 			path = "Custom Files";
 			sourceTree = "<group>";
 		};
-		BCC5244225389CE000D717C3 /* SettingsSubVC */ = {
+		BCC5244225389CE000D717C3 /* 3SettingsSubVC */ = {
 			isa = PBXGroup;
 			children = (
 				BC72FABA253868C00068A286 /* SettingsTableVC.swift */,
 				BC504CB22538A5A700DB1870 /* appIconsVC.swift */,
 				BC504CAD2538A57B00DB1870 /* appIconsCell.swift */,
 			);
-			path = SettingsSubVC;
+			path = 3SettingsSubVC;
 			sourceTree = "<group>";
 		};
-		BCCED4D025398FA700E71C0E /* CameraSubVC */ = {
+		BCCED4D025398FA700E71C0E /* 2CameraSubVC */ = {
 			isa = PBXGroup;
 			children = (
 				BCCED4CB25398FA200E71C0E /* CameraVC.swift */,
 				BC93B49D2539BE8B00A8DCDB /* ScannedImgCell.swift */,
 				BC93B47E2539AD3400A8DCDB /* PDFPreviewViewController.swift */,
 			);
-			path = CameraSubVC;
+			path = 2CameraSubVC;
 			sourceTree = "<group>";
 		};
 		BCCFDF05253845AC00A7F9A5 /* Storyboards */ = {
@@ -208,9 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				BC91136B253871040029C0F0 /* Custom Files */,
-				BC271E152538CCD8009CFA4A /* ScanSubVC */,
-				BCCED4D025398FA700E71C0E /* CameraSubVC */,
-				BCC5244225389CE000D717C3 /* SettingsSubVC */,
+				BC271E152538CCD8009CFA4A /* 1ScanSubVC */,
+				BCCED4D025398FA700E71C0E /* 2CameraSubVC */,
+				BCC5244225389CE000D717C3 /* 3SettingsSubVC */,
 				BC504CA02538A2C900DB1870 /* Alternate Icons */,
 			);
 			path = VCs;
@@ -533,6 +536,7 @@
 				BC504CB32538A5A700DB1870 /* appIconsVC.swift in Sources */,
 				BC93B3FE2539A3D800A8DCDB /* PDFCreator.swift in Sources */,
 				BCCED4CC25398FA200E71C0E /* CameraVC.swift in Sources */,
+				BCC7727E253A0E3500DF9054 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
