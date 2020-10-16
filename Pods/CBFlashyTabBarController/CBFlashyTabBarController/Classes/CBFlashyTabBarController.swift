@@ -46,7 +46,12 @@ open class CBFlashyTabBarController: UITabBarController {
         }
         let tabBar = CBFlashyTabBar()
         if let barTint = self.tabBar.barTintColor {
-            tabBar.barTintColor = barTint
+            if #available(iOS 11.0, *) {
+                tabBar.barTintColor = UIColor(named: "AppWhiteColor")
+            } else {
+                // Fallback on earlier versions
+                tabBar.barTintColor = barTint
+            }
         }
         self.setValue(tabBar, forKey: "tabBar")
     }

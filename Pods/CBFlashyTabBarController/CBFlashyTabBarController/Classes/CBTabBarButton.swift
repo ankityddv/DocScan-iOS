@@ -60,9 +60,24 @@ class CBTabBarButton: UIControl {
 
     override var tintColor: UIColor! {
         didSet {
-            tabImage.tintColor = tintColor.withAlphaComponent(0.4)
-            tabLabel.textColor = tintColor
-            dotView.backgroundColor = tintColor
+            if #available(iOS 11.0, *) {
+                tabImage.tintColor = UIColor(named: "AppBlackColor")!.withAlphaComponent(1)
+            } else {
+                // Fallback on earlier versions
+                tabImage.tintColor = tintColor.withAlphaComponent(0.4)
+            }
+            if #available(iOS 11.0, *) {
+                tabLabel.textColor = UIColor(named: "AppBlackColor")
+            } else {
+                // Fallback on earlier versions
+                tabLabel.textColor = tintColor
+            }
+            if #available(iOS 11.0, *) {
+                dotView.backgroundColor = UIColor(named: "AppBlackColor")
+            } else {
+                // Fallback on earlier versions
+                dotView.backgroundColor = tintColor
+            }
         }
     }
 

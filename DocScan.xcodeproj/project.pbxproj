@@ -10,6 +10,8 @@
 		224B380EA21D84C3C6237FBA /* Pods_DocScan_DocScanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */; };
 		40F9C8BE36B2F62300E4B886 /* Pods_DocScanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029CAE3389392B1C099BEED8 /* Pods_DocScanTests.framework */; };
 		64313192D2D248844F1182F1 /* Pods_DocScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DC432271E053DED0D7D6D /* Pods_DocScan.framework */; };
+		BC271E0E2538CC4D009CFA4A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */; };
+		BC271E172538CD07009CFA4A /* ScannedImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC271E162538CD07009CFA4A /* ScannedImagesCell.swift */; };
 		BC504CA42538A31D00DB1870 /* blackIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC504CA12538A31D00DB1870 /* blackIcon.png */; };
 		BC504CA52538A31D00DB1870 /* orangeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC504CA22538A31D00DB1870 /* orangeIcon.png */; };
 		BC504CA62538A31D00DB1870 /* purpleIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC504CA32538A31D00DB1870 /* purpleIcon.png */; };
@@ -20,7 +22,7 @@
 		BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FABA253868C00068A286 /* SettingsTableVC.swift */; };
 		BC911367253870EC0029C0F0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC911366253870EC0029C0F0 /* ShadowView.swift */; };
 		BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5244B25389E0700D717C3 /* AppIconService.swift */; };
-		BCE2493125388BE000B20D59 /* ScanImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2493025388BDF00B20D59 /* ScanImageView.swift */; };
+		BCCED4CC25398FA200E71C0E /* DocumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCED4CB25398FA200E71C0E /* DocumentsVC.swift */; };
 		BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79425384428005F7B99 /* AppDelegate.swift */; };
 		BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79625384428005F7B99 /* SceneDelegate.swift */; };
 		BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDF79825384428005F7B99 /* OnboardingVC.swift */; };
@@ -56,6 +58,8 @@
 		4323B7400DBFFA46C7FC78FC /* Pods-DocScanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScanTests.release.xcconfig"; path = "Target Support Files/Pods-DocScanTests/Pods-DocScanTests.release.xcconfig"; sourceTree = "<group>"; };
 		71D83E8ED577E3D45F1C799F /* Pods-DocScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScan.release.xcconfig"; path = "Target Support Files/Pods-DocScan/Pods-DocScan.release.xcconfig"; sourceTree = "<group>"; };
 		A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocScan_DocScanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		BC271E162538CD07009CFA4A /* ScannedImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedImagesCell.swift; sourceTree = "<group>"; };
 		BC504CA12538A31D00DB1870 /* blackIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackIcon.png; path = "Alternate Icons/blackIcon.png"; sourceTree = SOURCE_ROOT; };
 		BC504CA22538A31D00DB1870 /* orangeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orangeIcon.png; path = "Alternate Icons/orangeIcon.png"; sourceTree = SOURCE_ROOT; };
 		BC504CA32538A31D00DB1870 /* purpleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purpleIcon.png; path = "Alternate Icons/purpleIcon.png"; sourceTree = SOURCE_ROOT; };
@@ -66,7 +70,7 @@
 		BC72FABA253868C00068A286 /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		BC911366253870EC0029C0F0 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		BCC5244B25389E0700D717C3 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
-		BCE2493025388BDF00B20D59 /* ScanImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageView.swift; sourceTree = "<group>"; };
+		BCCED4CB25398FA200E71C0E /* DocumentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsVC.swift; sourceTree = "<group>"; };
 		BCFDF79125384428005F7B99 /* DocScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFDF79425384428005F7B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFDF79625384428005F7B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC271E152538CCD8009CFA4A /* ScanSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BC72FAB1253857D50068A286 /* ScanVC.swift */,
+				BC271E162538CD07009CFA4A /* ScannedImagesCell.swift */,
+			);
+			path = ScanSubVC;
+			sourceTree = "<group>";
+		};
 		BC504CA02538A2C900DB1870 /* Alternate Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				BC911366253870EC0029C0F0 /* ShadowView.swift */,
-				BCE2493025388BDF00B20D59 /* ScanImageView.swift */,
+				BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */,
 				BCC5244B25389E0700D717C3 /* AppIconService.swift */,
 			);
 			path = "Custom Files";
@@ -165,6 +178,14 @@
 				BC504CB22538A5A700DB1870 /* appIconsVC.swift */,
 			);
 			path = SettingsSubVC;
+			sourceTree = "<group>";
+		};
+		BCCED4D025398FA700E71C0E /* DocumentsSubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BCCED4CB25398FA200E71C0E /* DocumentsVC.swift */,
+			);
+			path = DocumentsSubVC;
 			sourceTree = "<group>";
 		};
 		BCCFDF05253845AC00A7F9A5 /* Storyboards */ = {
@@ -181,9 +202,10 @@
 			children = (
 				BC91136B253871040029C0F0 /* Custom Files */,
 				BCFDF79825384428005F7B99 /* OnboardingVC.swift */,
-				BC72FAB1253857D50068A286 /* ScanVC.swift */,
-				BC504CA02538A2C900DB1870 /* Alternate Icons */,
+				BC271E152538CCD8009CFA4A /* ScanSubVC */,
+				BCCED4D025398FA700E71C0E /* DocumentsSubVC */,
 				BCC5244225389CE000D717C3 /* SettingsSubVC */,
+				BC504CA02538A2C900DB1870 /* Alternate Icons */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -492,15 +514,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC911367253870EC0029C0F0 /* ShadowView.swift in Sources */,
+				BC271E172538CD07009CFA4A /* ScannedImagesCell.swift in Sources */,
 				BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */,
 				BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */,
 				BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */,
 				BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */,
 				BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */,
 				BCFDF79725384428005F7B99 /* SceneDelegate.swift in Sources */,
-				BCE2493125388BE000B20D59 /* ScanImageView.swift in Sources */,
+				BC271E0E2538CC4D009CFA4A /* CustomImageView.swift in Sources */,
 				BC504CAE2538A57B00DB1870 /* appIconsCell.swift in Sources */,
 				BC504CB32538A5A700DB1870 /* appIconsVC.swift in Sources */,
+				BCCED4CC25398FA200E71C0E /* DocumentsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
