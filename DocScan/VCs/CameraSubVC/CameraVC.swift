@@ -10,18 +10,15 @@ import Vision
 import VisionKit
 import PDFKit
 
-class DocumentsVC: UIViewController {
+class CameraVC: UIViewController {
     
     var pdfView: PDFView!
+    
+    @IBOutlet weak var imgView: UIImageView!
     
     @IBAction func shareBttnAction(_ sender: Any) {
         shareAction()
     }
-    
-    
-    
-    @IBOutlet weak var imgView: UIImageView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +27,15 @@ class DocumentsVC: UIViewController {
         configureDocumentView()
     }
     
+    //MARK:- Code below this is used to create the PDF and perform other actions.
     @objc func shareAction() {
       // 1
       guard
         let image = imgView.image
         else{
           // 2
-          let alert = UIAlertController(title: "All Information Not Provided", message: "You must supply all information to create a flyer.", preferredStyle: .alert)
-          alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+          let alert = UIAlertController(title: "Can't share the file!", message: "Please scan the file and try agin ☺️", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "Do you have any other option?", style: .default, handler: nil))
           present(alert, animated: true, completion: nil)
           return
       }
@@ -55,12 +53,13 @@ class DocumentsVC: UIViewController {
         return true
       }
       
-      let alert = UIAlertController(title: "All Information Not Provided", message: "You must supply all information to create a flyer.", preferredStyle: .alert)
+      let alert = UIAlertController(title: "Can't create the preview!", message: "Please scan the file and try agin ☺️", preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
       present(alert, animated: true, completion: nil)
       
       return false
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "previewSegue" {
         guard let vc = segue.destination as? PDFPreviewViewController else { return }
@@ -73,8 +72,7 @@ class DocumentsVC: UIViewController {
     }
     
     
-    //MARK:-
-    
+    //MARK:- Set up scanner
     private func configureDocumentView(){
         let scanningDocumentVC = VNDocumentCameraViewController()
         scanningDocumentVC.delegate = self
@@ -84,7 +82,7 @@ class DocumentsVC: UIViewController {
     
 }
 
-extension DocumentsVC:VNDocumentCameraViewControllerDelegate {
+extension CameraVC:VNDocumentCameraViewControllerDelegate {
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         for pageNumber in 0..<scan.pageCount {
@@ -105,7 +103,8 @@ extension DocumentsVC:VNDocumentCameraViewControllerDelegate {
         controller.dismiss(animated: true)
     }
 }
-extension DocumentsVC: UIImagePickerControllerDelegate {
+/*
+extension CameraVC: UIImagePickerControllerDelegate {
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
     
     guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
@@ -118,3 +117,4 @@ extension DocumentsVC: UIImagePickerControllerDelegate {
     dismiss(animated: true, completion: nil)
   }
 }
+*/

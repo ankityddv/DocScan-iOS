@@ -10,10 +10,56 @@ import PDFKit
 import Vision
 import VisionKit
 
-class ScanVC: UIViewController{
+class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate{
     
     var myCollectionView: UICollectionView?
     
+    @IBOutlet weak var ScannedImageView: UIImageView!
+    @IBOutlet var emptyView: UIView!
+    @IBOutlet weak var addBttn: UIBarButtonItem!
+    
+    @IBAction func showaddTapped(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "Select Photo", message: "Where do you want to select a photo?", preferredStyle: .actionSheet)
+        
+        let photoAction = UIAlertAction(title: "Photos", style: .default) { (action) in
+          if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
+            let photoPicker = UIImagePickerController()
+            photoPicker.delegate = self
+            photoPicker.sourceType = .photoLibrary
+            photoPicker.allowsEditing = false
+            
+            self.present(photoPicker, animated: true, completion: nil)
+          }
+        }
+        actionSheet.addAction(photoAction)
+        
+        let cameraAction = UIAlertAction(title: "Scan", style: .default) { [self] (action) in
+          configureDocumentView()
+        }
+        actionSheet.addAction(cameraAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        actionSheet.addAction(cancelAction)
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    //HiddenButton
+    @IBAction func showMenu(_ sender: Any) {
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // To hide the top line
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        // To hide the top line
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
+        createCollView()
+        setUpMenu()
+    }
+    
+    
+    //MARK:- To create the collectionView on the page.
     func createCollView(){
         let view = UIView()
         view.backgroundColor = UIColor(named:"AppGrayColor")
@@ -34,28 +80,8 @@ class ScanVC: UIViewController{
             self.view = view
     }
     
-    @IBOutlet weak var ScannedImageView: UIImageView!
-    @IBOutlet var emptyView: UIView!
-    @IBOutlet weak var addBttn: UIBarButtonItem!
     
-    @IBAction func showaddTapped(_ sender: Any) {
-        configureDocumentView()
-    }
-    @IBAction func showMenu(_ sender: Any) {
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // To hide the top line
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        // To hide the top line
-        self.tabBarController?.tabBar.shadowImage = UIImage()
-        self.tabBarController?.tabBar.backgroundImage = UIImage()
-        createCollView()
-        setUpMenu()
-    }
-    
-    // Set up uimenu Button
+    //MARK:- Set up uimenu Button
     func setUpMenu(){
         let saveAction = UIAction(title: "") { action in
             // whatever
@@ -84,6 +110,7 @@ class ScanVC: UIViewController{
         }
     }
     
+    //MARK:- Set up scanner
     private func configureDocumentView(){
         let scanningDocumentVC = VNDocumentCameraViewController()
         scanningDocumentVC.delegate = self
@@ -122,38 +149,15 @@ extension ScanVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
         myCell.backgroundColor = UIColor(named:"AppWhiteColor")
-        myCell.layer.cornerRadius = 10
+        myCell.layer.cornerRadius = 20
         myCell.layer.masksToBounds = true
         return myCell
     }
 }
+// CollectionView shits
 extension ScanVC: UICollectionViewDelegate {
  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        print("User tapped on item \(indexPath.row)")
     }
 }
-/*
-func createPDF(){
-    // Create an empty PDF document
-    let pdfDocument = PDFDocument()
-
-    // Load or create your UIImage
-    let imageOut = UIImage(...)
-
-    // Create a PDF page instance from your image
-    let pdfPage = PDFPage(image: imageOut!)
-
-    // Insert the PDF page into your document
-    pdfDocument.insert(pdfPage!, at: 0)
-
-    // Get the raw data of your PDF document
-    let data = pdfDocument.dataRepresentation()
-
-    // The url to save the data to
-    let url = URL(fileURLWithPath: "/Path/To/Your/PDF")
-
-    // Save the data to the url
-    try! data!.write(to: url)
-}
-*/

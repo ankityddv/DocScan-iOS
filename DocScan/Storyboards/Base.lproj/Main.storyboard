@@ -238,7 +238,7 @@ save any of your data on servers.</string>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2650.7246376811595" y="-834.375"/>
+            <point key="canvasLocation" x="2587" y="-834"/>
         </scene>
         <!--Flashy Tab Bar Controller-->
         <scene sceneID="Hva-d4-S6m">
@@ -445,23 +445,23 @@ save any of your data on servers.</string>
             </objects>
             <point key="canvasLocation" x="3300" y="82"/>
         </scene>
-        <!--Documents-->
+        <!--Scan-->
         <scene sceneID="A9D-nh-Ucn">
             <objects>
-                <viewController storyboardIdentifier="DocumentsVC" id="bDT-9I-dNJ" customClass="DocumentsVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraVC" id="bDT-9I-dNJ" customClass="CameraVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Drv-BR-WUp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-hw-ygr">
-                                <rect key="frame" x="74" y="164" width="267" height="235"/>
+                                <rect key="frame" x="20" y="34" width="374" height="604"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3kn-HA-UAx"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Documents" id="ELY-Kj-Oz6">
+                    <navigationItem key="navigationItem" title="Scan" id="ELY-Kj-Oz6">
                         <barButtonItem key="leftBarButtonItem" image="doc" catalog="system" id="xNC-U4-X2S">
                             <connections>
                                 <segue destination="Hlb-IF-8JL" kind="show" identifier="previewSegue" id="kUs-wJ-Kfn"/>
@@ -479,14 +479,14 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEz-NJ-qgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2650.7246376811595" y="892.63392857142856"/>
+            <point key="canvasLocation" x="2587" y="893"/>
         </scene>
         <!--Preview View Controller-->
         <scene sceneID="Efl-bh-Nlp">
             <objects>
-                <viewController id="Hlb-IF-8JL" customClass="PDFPreviewViewController" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Hlb-IF-8JL" customClass="PDFPreviewViewController" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JMZ-7K-uzY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rx-Wb-dM1" customClass="PDFView">
@@ -505,7 +505,7 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi1-Zq-FDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3434.7826086956525" y="892.63392857142856"/>
+            <point key="canvasLocation" x="3300" y="893"/>
         </scene>
         <!--Scan-->
         <scene sceneID="5N5-6k-7dx">
