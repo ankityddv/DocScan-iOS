@@ -10,6 +10,7 @@
 		224B380EA21D84C3C6237FBA /* Pods_DocScan_DocScanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */; };
 		40F9C8BE36B2F62300E4B886 /* Pods_DocScanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029CAE3389392B1C099BEED8 /* Pods_DocScanTests.framework */; };
 		64313192D2D248844F1182F1 /* Pods_DocScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DC432271E053DED0D7D6D /* Pods_DocScan.framework */; };
+		BC050B46253C8E90004B9BCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC050B45253C8E90004B9BCF /* GoogleService-Info.plist */; };
 		BC271E0E2538CC4D009CFA4A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */; };
 		BC504CA42538A31D00DB1870 /* blackIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC504CA12538A31D00DB1870 /* blackIcon.png */; };
 		BC504CA52538A31D00DB1870 /* orangeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC504CA22538A31D00DB1870 /* orangeIcon.png */; };
@@ -62,6 +63,7 @@
 		4323B7400DBFFA46C7FC78FC /* Pods-DocScanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScanTests.release.xcconfig"; path = "Target Support Files/Pods-DocScanTests/Pods-DocScanTests.release.xcconfig"; sourceTree = "<group>"; };
 		71D83E8ED577E3D45F1C799F /* Pods-DocScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocScan.release.xcconfig"; path = "Target Support Files/Pods-DocScan/Pods-DocScan.release.xcconfig"; sourceTree = "<group>"; };
 		A38BAC355EC0FDEC4BFF7F32 /* Pods_DocScan_DocScanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocScan_DocScanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC050B45253C8E90004B9BCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC271E0D2538CC4D009CFA4A /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		BC504CA12538A31D00DB1870 /* blackIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackIcon.png; path = "Alternate Icons/blackIcon.png"; sourceTree = SOURCE_ROOT; };
 		BC504CA22538A31D00DB1870 /* orangeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orangeIcon.png; path = "Alternate Icons/orangeIcon.png"; sourceTree = SOURCE_ROOT; };
@@ -269,6 +271,7 @@
 				BCCFDF05253845AC00A7F9A5 /* Storyboards */,
 				BCCFDF10253845C600A7F9A5 /* Supporting Files */,
 				BCFDF7A22538442B005F7B99 /* Info.plist */,
+				BC050B45253C8E90004B9BCF /* GoogleService-Info.plist */,
 			);
 			path = DocScan;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				BCFDF78E25384428005F7B99 /* Frameworks */,
 				BCFDF78F25384428005F7B99 /* Resources */,
 				86BFDC5C8B157DF0D95220FF /* [CP] Embed Pods Frameworks */,
+				CDCFA89FFF2C06FD7CBFDEAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +345,7 @@
 				BCFDF7AF2538442C005F7B99 /* Frameworks */,
 				BCFDF7B02538442C005F7B99 /* Resources */,
 				36370C41345F01BCF7FD7178 /* [CP] Embed Pods Frameworks */,
+				20CA34A16E620CCEA0111AAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC504CBD2538A8C100DB1870 /* blueIcon.png in Resources */,
+				BC050B46253C8E90004B9BCF /* GoogleService-Info.plist in Resources */,
 				BCFDF7A12538442B005F7B99 /* LaunchScreen.storyboard in Resources */,
 				BC504CA52538A31D00DB1870 /* orangeIcon.png in Resources */,
 				BCFDF79E2538442B005F7B99 /* Assets.xcassets in Resources */,
@@ -426,6 +432,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20CA34A16E620CCEA0111AAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DocScan-DocScanUITests/Pods-DocScan-DocScanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		36370C41345F01BCF7FD7178 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -524,6 +547,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCFA89FFF2C06FD7CBFDEAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocScan/Pods-DocScan-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocScan/Pods-DocScan-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DocScan/Pods-DocScan-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -733,7 +773,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdc.comonents.cellselection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdc.docScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -754,7 +794,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tdc.comonents.cellselection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdc.docScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

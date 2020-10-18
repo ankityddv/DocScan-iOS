@@ -667,7 +667,7 @@ save any of your data on servers.</string>
         <image name="appIcon" width="1024" height="1024"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
-        <image name="cloud" catalog="system" width="32" height="32"/>
+        <image name="cloud" catalog="system" width="128" height="87"/>
         <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="folder" catalog="system" width="128" height="97"/>
         <image name="message" catalog="system" width="128" height="113"/>

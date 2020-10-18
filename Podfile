@@ -7,6 +7,11 @@ target 'DocScan' do
   # Pods for DocScan
     pod 'TDCRoundButton'
     pod 'CBFlashyTabBarController'
+    pod 'Firebase'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Database'
+    pod 'GoogleSignIn'
 
   target 'DocScanTests' do
     inherit! :search_paths
