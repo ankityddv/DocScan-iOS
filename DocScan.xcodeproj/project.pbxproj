@@ -18,6 +18,9 @@
 		BC504CAE2538A57B00DB1870 /* appIconsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC504CAD2538A57B00DB1870 /* appIconsCell.swift */; };
 		BC504CB32538A5A700DB1870 /* appIconsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC504CB22538A5A700DB1870 /* appIconsVC.swift */; };
 		BC504CBD2538A8C100DB1870 /* blueIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC504CBC2538A8C100DB1870 /* blueIcon.png */; };
+		BC563F27253F45EC0093C498 /* FileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC563F26253F45EC0093C498 /* FileUtility.swift */; };
+		BC563F2C253F49CB0093C498 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC563F2B253F49CB0093C498 /* AlertUtil.swift */; };
+		BC563F31253F4A290093C498 /* ++UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC563F30253F4A290093C498 /* ++UIViewController.swift */; };
 		BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FAB1253857D50068A286 /* ScanVC.swift */; };
 		BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC72FABA253868C00068A286 /* SettingsTableVC.swift */; };
 		BC911367253870EC0029C0F0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC911366253870EC0029C0F0 /* ShadowView.swift */; };
@@ -71,6 +74,9 @@
 		BC504CAD2538A57B00DB1870 /* appIconsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appIconsCell.swift; sourceTree = "<group>"; };
 		BC504CB22538A5A700DB1870 /* appIconsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appIconsVC.swift; sourceTree = "<group>"; };
 		BC504CBC2538A8C100DB1870 /* blueIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueIcon.png; path = "Alternate Icons/blueIcon.png"; sourceTree = SOURCE_ROOT; };
+		BC563F26253F45EC0093C498 /* FileUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
+		BC563F2B253F49CB0093C498 /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		BC563F30253F4A290093C498 /* ++UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "++UIViewController.swift"; sourceTree = "<group>"; };
 		BC72FAB1253857D50068A286 /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		BC72FABA253868C00068A286 /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
 		BC911366253870EC0029C0F0 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -177,6 +183,9 @@
 				BC93B3FD2539A3D800A8DCDB /* PDFCreator.swift */,
 				BCC5244B25389E0700D717C3 /* AppIconService.swift */,
 				BCFDF79825384428005F7B99 /* OnboardingVC.swift */,
+				BC563F26253F45EC0093C498 /* FileUtility.swift */,
+				BC563F2B253F49CB0093C498 /* AlertUtil.swift */,
+				BC563F30253F4A290093C498 /* ++UIViewController.swift */,
 			);
 			path = "Custom Files";
 			sourceTree = "<group>";
@@ -578,6 +587,7 @@
 				BCFDF79925384428005F7B99 /* OnboardingVC.swift in Sources */,
 				BC72FABB253868C00068A286 /* SettingsTableVC.swift in Sources */,
 				BC72FAB2253857D50068A286 /* ScanVC.swift in Sources */,
+				BC563F31253F4A290093C498 /* ++UIViewController.swift in Sources */,
 				BCFDF79525384428005F7B99 /* AppDelegate.swift in Sources */,
 				BCFF01D4253A20B00052CBDB /* FoldersCVCell.swift in Sources */,
 				BCC5244C25389E0700D717C3 /* AppIconService.swift in Sources */,
@@ -586,8 +596,10 @@
 				BC271E0E2538CC4D009CFA4A /* CustomImageView.swift in Sources */,
 				BC504CAE2538A57B00DB1870 /* appIconsCell.swift in Sources */,
 				BC504CB32538A5A700DB1870 /* appIconsVC.swift in Sources */,
+				BC563F27253F45EC0093C498 /* FileUtility.swift in Sources */,
 				BC93B3FE2539A3D800A8DCDB /* PDFCreator.swift in Sources */,
 				BCCED4CC25398FA200E71C0E /* CameraVC.swift in Sources */,
+				BC563F2C253F49CB0093C498 /* AlertUtil.swift in Sources */,
 				BCC7727E253A0E3500DF9054 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
