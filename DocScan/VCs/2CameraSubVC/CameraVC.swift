@@ -110,12 +110,39 @@ extension CameraVC:VNDocumentCameraViewControllerDelegate {
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         
-        for pageNumber in 0..<scan.pageCount {
-            let Outimage = scan.imageOfPage(at: pageNumber)
-            imgView.image = scan.imageOfPage(at: 0)
-            imgView2.image = scan.imageOfPage(at: 1)
+        /*
+         for pageNumber in 0..<scan.pageCount {
+                     let Outimage = scan.imageOfPage(at: pageNumber)
+                     imgView.image = scan.imageOfPage(at: 0)
+                     imgView2.image = scan.imageOfPage(at: 1)
+         controller.dismiss(animated: true, completion: nil)
+         */
+        guard scan.pageCount >= 1 else {
+            controller.dismiss(animated: true)
+            return
         }
-        controller.dismiss(animated: true, completion: nil)
+        print("Found \(scan.pageCount)")
+        let pdfDocument = PDFDocument()
+
+        for i in 0 ..< scan.pageCount {
+            let img = scan.imageOfPage(at: i)
+            // ... your code here
+            let pdfPage = PDFPage(image: img)
+            pdfDocument.insert(pdfPage!, at: i)
+        }
+        let data = pdfDocument.dataRepresentation()
+        let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let docURL = documentDirectory.appendingPathComponent("Scanned-Docs.pdf")
+        do{
+            print("Documet: \(docURL)")
+            try data?.write(to: docURL)
+        }catch(let error){
+            print("error is \(error.localizedDescription)")
+        }
+//        let originalImage = scan.imageOfPage(at: 0)
+//        let newImage = compressedImage(originalImage)
+        controller.dismiss(animated: true)
+//        processImage(newImage)
     }
     
     func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {

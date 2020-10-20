@@ -164,7 +164,7 @@ save any of your data on servers.</string>
         <!--DocScan-->
         <scene sceneID="c6O-n8-uKb">
             <objects>
-                <viewController storyboardIdentifier="ScanVC" id="gra-LP-s25" customClass="ScanVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScanVC" modalPresentationStyle="fullScreen" id="gra-LP-s25" customClass="ScanVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Th-db-7p1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,7 +250,7 @@ save any of your data on servers.</string>
                                     <segue destination="dVl-B0-R3K" kind="show" id="T6k-yI-vPb"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem style="plain" systemItem="add" id="fD3-sX-Dtq">
+                            <barButtonItem title="Item" image="folder.badge.plus" catalog="system" style="plain" id="fD3-sX-Dtq">
                                 <color key="tintColor" name="AppBlackColor"/>
                                 <connections>
                                     <action selector="showaddTapped:" destination="gra-LP-s25" id="01I-5T-kQn"/>
@@ -310,7 +310,7 @@ save any of your data on servers.</string>
         <!--Settings-->
         <scene sceneID="Qmc-7B-Mih">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nwi-Mk-kM9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="pageSheet" id="nwi-Mk-kM9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="woH-2Z-VIa"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="3Jx-a5-oBD"/>
@@ -330,7 +330,7 @@ save any of your data on servers.</string>
         <!--Settings-->
         <scene sceneID="6vh-7b-4aL">
             <objects>
-                <tableViewController id="FJl-wv-xDn" customClass="SettingsTableVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="pageSheet" id="FJl-wv-xDn" customClass="SettingsTableVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="HXx-eo-skX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -430,7 +430,7 @@ save any of your data on servers.</string>
         <!--App Icons-->
         <scene sceneID="Bbw-tF-zqb">
             <objects>
-                <viewController storyboardIdentifier="appIconsVC" hidesBottomBarWhenPushed="YES" id="7jF-h4-IiT" customClass="appIconsVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="appIconsVC" modalPresentationStyle="pageSheet" hidesBottomBarWhenPushed="YES" id="7jF-h4-IiT" customClass="appIconsVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4v-uA-R2j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -660,7 +660,7 @@ save any of your data on servers.</string>
             <size key="intrinsicContentSize" width="62" height="30"/>
         </designable>
         <designable name="YtD-Q7-T7Z">
-            <size key="intrinsicContentSize" width="107" height="18.5"/>
+            <size key="intrinsicContentSize" width="67" height="18.5"/>
         </designable>
     </designables>
     <color key="tintColor" name="AppBlackColor"/>
@@ -674,6 +674,7 @@ save any of your data on servers.</string>
         <image name="cloud" catalog="system" width="128" height="87"/>
         <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="folder.badge.plus" catalog="system" width="128" height="91"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <namedColor name="AppBlackColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
