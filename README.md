@@ -6,6 +6,8 @@
 Designing and developing a open source pdf scanner from scratch.
 DocScan allows to scan and share your PDF documents.
 
+<img src="ss.png" alt="Homeversity App" />
+
 ## What you will get in this project
 
 Your following questions are answered in the project:
