@@ -326,7 +326,7 @@ struct File {
     let name : String!
     let type : FileType!
     let size : String!
-    //let image : UIImage!
+    let image : UIImage!
     let path : String!
     let url : URL!
     init(fileUrl:URL) {
@@ -337,28 +337,28 @@ struct File {
         case "":
             name = fileUrl.lastPathComponent
             type = .folder
-            //image = UIImage(named: "FolderIconPink")                //?.tint(with: Theme.folderColor)
+            self.image = UIImage(named: "FolderIconPink")                //?.tint(with: Theme.folderColor)
             size = FileUtility.shared.getSize(ofDirectory: self.url)
         case "pdf":
             name = fileUrl.deletingPathExtension().lastPathComponent
             type = .pdf
             self.size = FileUtility.shared.fileSize(fileAt: self.url)
-            //image = UIImage(named: "pictureAsPdf")?.tint(with:Theme.pdfIconColor)
+            image = UIImage(named: "pictureAsPdf") //?.tint(with:Theme.pdfIconColor)
         case "jpg":
             name = fileUrl.deletingPathExtension().lastPathComponent
             type = .jpg
             self.size = FileUtility.shared.fileSize(fileAt: self.url)
-            //image = UIImage(named: "pictureAsPdf")
+            image = UIImage(named: "pictureAsPdf")
         case "png":
             name = fileUrl.deletingPathExtension().lastPathComponent
             type = .png
             self.size = FileUtility.shared.fileSize(fileAt: self.url)
-            //image = UIImage(named: "pictureAsPdf")
+            image = UIImage(named: "pictureAsPdf")
         default:
             name = fileUrl.lastPathComponent
             type = .folder
             size = FileUtility.shared.getFileSize(ofFolder: self.url)
-            //image = UIImage(named: "folder")
+            image = UIImage(named: "folder")
         }
     }
 }

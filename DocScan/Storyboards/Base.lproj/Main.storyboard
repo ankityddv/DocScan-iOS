@@ -53,7 +53,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="continueBttTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUT-rY-Gj3"/>
-                                    <segue destination="XVK-aW-cDw" kind="show" id="BsZ-z1-Rit"/>
+                                    <segue destination="XJo-ym-Hf1" kind="show" id="fDt-es-NPn"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsU-sE-2Ur">
@@ -159,19 +159,18 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="82"/>
+            <point key="canvasLocation" x="-1412" y="-599"/>
         </scene>
         <!--DocScan-->
         <scene sceneID="c6O-n8-uKb">
             <objects>
                 <viewController storyboardIdentifier="ScanVC" id="gra-LP-s25" customClass="ScanVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Th-db-7p1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-pc-gz0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="839"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-pc-gz0">
+                                <rect key="frame" x="0.0" y="56" width="414" height="783"/>
                                 <color key="backgroundColor" name="AppGrayColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="10" id="vkE-4V-Ekh">
                                     <size key="itemSize" width="170" height="191"/>
@@ -232,18 +231,42 @@ save any of your data on servers.</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UXH-cY-G8H"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="CUk-pc-gz0" firstAttribute="centerX" secondItem="4Th-db-7p1" secondAttribute="centerX" id="1rF-ZX-E4I"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CUk-pc-gz0" secondAttribute="bottom" constant="-31" id="C6l-CG-Mqo"/>
+                            <constraint firstItem="CUk-pc-gz0" firstAttribute="leading" secondItem="UXH-cY-G8H" secondAttribute="leading" id="ZFO-kT-vGc"/>
+                            <constraint firstItem="CUk-pc-gz0" firstAttribute="top" secondItem="UXH-cY-G8H" secondAttribute="top" id="fmB-d8-fP7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DocScan" largeTitleDisplayMode="always" id="QZu-ZN-G4w">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="fD3-sX-Dtq">
-                            <color key="tintColor" name="AppBlackColor"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="w9X-O6-ox4">
                             <connections>
-                                <action selector="showaddTapped:" destination="gra-LP-s25" id="01I-5T-kQn"/>
+                                <action selector="backBttnTapped:" destination="gra-LP-s25" id="Hzl-io-U9D"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="camera.viewfinder" catalog="system" id="cc7-0g-73o">
+                                <connections>
+                                    <segue destination="dVl-B0-R3K" kind="show" id="T6k-yI-vPb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" systemItem="add" id="fD3-sX-Dtq">
+                                <color key="tintColor" name="AppBlackColor"/>
+                                <connections>
+                                    <action selector="showaddTapped:" destination="gra-LP-s25" id="01I-5T-kQn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Settings" id="6QM-kZ-Bpx">
+                                <connections>
+                                    <segue destination="nwi-Mk-kM9" kind="show" id="e6S-gV-HaK"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="InstructionView" destination="4uk-0x-Pah" id="Re6-0a-jO7"/>
                         <outlet property="addBttn" destination="fD3-sX-Dtq" id="fre-Qd-d6X"/>
+                        <outlet property="backBttn" destination="w9X-O6-ox4" id="UlB-Ni-lHN"/>
                         <outlet property="collectionView" destination="CUk-pc-gz0" id="h2D-xU-tmC"/>
                         <outlet property="emptyView" destination="4uk-0x-Pah" id="6Kz-hp-6HE"/>
                     </connections>
@@ -262,39 +285,17 @@ save any of your data on servers.</string>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2587" y="-599"/>
+            <point key="canvasLocation" x="227.536231884058" y="-599.33035714285711"/>
         </scene>
-        <!--Flashy Tab Bar Controller-->
-        <scene sceneID="Hva-d4-S6m">
-            <objects>
-                <tabBarController storyboardIdentifier="tab_bar" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="XVK-aW-cDw" customClass="CBFlashyTabBarController" customModule="CBFlashyTabBarController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="HRq-Xx-sYr"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="idc-q6-1r4">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="AppWhiteColor"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="XJo-ym-Hf1" kind="relationship" relationship="viewControllers" id="LtG-sn-pSs"/>
-                        <segue destination="dVl-B0-R3K" kind="relationship" relationship="viewControllers" id="DSm-ZG-KVs"/>
-                        <segue destination="nwi-Mk-kM9" kind="relationship" relationship="viewControllers" id="eFx-Ck-SLo"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WJH-Dh-RAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="769.56521739130437" y="81.696428571428569"/>
-        </scene>
-        <!--Home-->
+        <!--Docs-->
         <scene sceneID="En6-2p-CpN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XJo-ym-Hf1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="Highlights" id="NbU-mS-lT5"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="XJo-ym-Hf1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Docs" image="folder" catalog="system" id="NbU-mS-lT5"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="3F9-Mr-A7v"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="SaP-9r-FVn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -304,7 +305,7 @@ save any of your data on servers.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkV-FB-3an" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="-599"/>
+            <point key="canvasLocation" x="-546" y="-599"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Qmc-7B-Mih">
@@ -312,8 +313,9 @@ save any of your data on servers.</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nwi-Mk-kM9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="woH-2Z-VIa"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="3Jx-a5-oBD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Vf6-VN-62r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -323,14 +325,14 @@ save any of your data on servers.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lyr-3y-rxS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="82"/>
+            <point key="canvasLocation" x="228" y="122"/>
         </scene>
         <!--Settings-->
         <scene sceneID="6vh-7b-4aL">
             <objects>
                 <tableViewController id="FJl-wv-xDn" customClass="SettingsTableVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="HXx-eo-skX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="AppGrayColor"/>
                         <sections>
@@ -423,14 +425,14 @@ save any of your data on servers.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91l-f6-s5k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="82"/>
+            <point key="canvasLocation" x="964" y="122"/>
         </scene>
         <!--App Icons-->
         <scene sceneID="Bbw-tF-zqb">
             <objects>
                 <viewController storyboardIdentifier="appIconsVC" hidesBottomBarWhenPushed="YES" id="7jF-h4-IiT" customClass="appIconsVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4v-uA-R2j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="WYz-cJ-JoQ">
@@ -483,17 +485,17 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNN-rt-TQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3419" y="82"/>
+            <point key="canvasLocation" x="1701" y="122"/>
         </scene>
         <!--Scan-->
         <scene sceneID="A9D-nh-Ucn">
             <objects>
-                <viewController storyboardIdentifier="CameraVC" id="bDT-9I-dNJ" customClass="CameraVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraVC" modalPresentationStyle="pageSheet" id="bDT-9I-dNJ" customClass="CameraVC" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Drv-BR-WUp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-fk-13Y">
+                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-fk-13Y">
                                 <rect key="frame" x="0.0" y="462" width="414" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AppGrayColor"/>
@@ -539,14 +541,14 @@ save any of your data on servers.</string>
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scanned Pages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-pg-Dtc">
-                                <rect key="frame" x="28" y="244" width="88" height="15"/>
+                                <rect key="frame" x="28" y="199" width="88" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Document" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-Q7-T7Z" customClass="CustomTextField" customModule="DocScan" customModuleProvider="target">
-                                <rect key="frame" x="20" y="164" width="374" height="50"/>
+                                <rect key="frame" x="20" y="119" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AppWhiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -561,11 +563,11 @@ save any of your data on servers.</string>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-hw-ygr">
-                                <rect key="frame" x="28" y="279" width="170" height="220"/>
+                                <rect key="frame" x="28" y="234" width="170" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIW-hR-5ZX">
-                                <rect key="frame" x="220" y="279" width="170" height="220"/>
+                                <rect key="frame" x="220" y="234" width="170" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -599,18 +601,18 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEz-NJ-qgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="818"/>
+            <point key="canvasLocation" x="1700" y="-599"/>
         </scene>
         <!--Preview-->
         <scene sceneID="Efl-bh-Nlp">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="Hlb-IF-8JL" customClass="PDFPreviewViewController" customModule="DocScan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JMZ-7K-uzY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rx-Wb-dM1" customClass="PDFView">
-                                <rect key="frame" x="0.0" y="108" width="414" height="734"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -630,16 +632,17 @@ save any of your data on servers.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi1-Zq-FDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3419" y="818"/>
+            <point key="canvasLocation" x="2488" y="-599"/>
         </scene>
         <!--Scan-->
         <scene sceneID="5N5-6k-7dx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dVl-B0-R3K" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="pageSheet" id="dVl-B0-R3K" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan" image="camera" catalog="system" id="nI4-95-KJx"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BZR-f6-IzF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pTC-2r-34A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -649,7 +652,7 @@ save any of your data on servers.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAq-Qx-3eK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="818"/>
+            <point key="canvasLocation" x="964" y="-599"/>
         </scene>
     </scenes>
     <designables>
@@ -662,7 +665,6 @@ save any of your data on servers.</string>
     </designables>
     <color key="tintColor" name="AppBlackColor"/>
     <resources>
-        <image name="Highlights" width="12" height="21"/>
         <image name="MenuBttn" width="4" height="15"/>
         <image name="Settings" width="21" height="14"/>
         <image name="app.gift" catalog="system" width="128" height="114"/>

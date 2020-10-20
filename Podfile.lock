@@ -4,7 +4,6 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
-  - CBFlashyTabBarController (0.8.3)
   - Firebase (6.34.0):
     - Firebase/Core (= 6.34.0)
   - Firebase/Auth (6.34.0):
@@ -104,7 +103,6 @@ PODS:
   - TDCRoundButton (0.1.4)
 
 DEPENDENCIES:
-  - CBFlashyTabBarController
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -115,7 +113,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppAuth
-    - CBFlashyTabBarController
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -137,7 +134,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  CBFlashyTabBarController: bc6b11dd4cbc9b54785c8944156e2f4d4f03b088
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
   FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
   FirebaseAuth: c92d49ada7948d1a23466e3db17bc4c2039dddc3
@@ -157,6 +153,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   TDCRoundButton: e62175861daca33f6d780f3718505747fe4db70a
 
-PODFILE CHECKSUM: f3d6ed65f0da829aba5a70f77469c3b3048c599d
+PODFILE CHECKSUM: f6e21c487d184f030da668b19a648a4834c1b5a9
 
 COCOAPODS: 1.9.3

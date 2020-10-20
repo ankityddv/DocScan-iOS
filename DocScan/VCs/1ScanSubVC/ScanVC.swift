@@ -10,15 +10,20 @@ import PDFKit
 import Vision
 import VisionKit
 
-class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource{
+class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource, UIGestureRecognizerDelegate{
     
     var workingDirectory : URL?
     var allFiles : [File] = []
+    var storedBarItem : UIBarButtonItem?
     
+    @IBOutlet weak var backBttn: UIBarButtonItem!
     @IBOutlet var InstructionView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet var emptyView: UIView!
     @IBOutlet weak var addBttn: UIBarButtonItem!
+    @IBAction func backBttnTapped(_ sender: Any) {
+        returnToPreviousDirectory()
+    }
     
     //MARK: - Create directory
     func gotoDirectory(directory:URL) {
@@ -26,11 +31,21 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
             self.navigationItem.leftBarButtonItem = nil
             self.title = "HOME"
         }else{
-            //self.navigationItem.leftBarButtonItem = self.barBackButton
+            self.navigationItem.leftBarButtonItem = self.backBttn
             self.title = directory.lastPathComponent.uppercased()
         }
         self.workingDirectory = directory
         reloadTableData()
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    func returnToPreviousDirectory(){
+        if(self.workingDirectory?.lastPathComponent == "DocScanner"){
+        }else{
+            self.workingDirectory?.deleteLastPathComponent()
+            self.title = workingDirectory!.lastPathComponent.uppercased()
+        }
+        self.gotoDirectory(directory: self.workingDirectory!)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     //MARK: -
@@ -57,6 +72,7 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
             self.allFiles = FileUtility.shared.scanDirectory(directory: self.workingDirectory!)
         }
         self.collectionView.reloadData()
+        
     }
     
     func reloadTableData() {
@@ -79,7 +95,7 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         //cell.dateLabel.text = dateArr[indexPath.row]
         //cell.documentName.text = nameArr[indexPath.row]
         
-        //cell.imageView?.image = self.allFiles[indexPath.row].image
+        cell.imageView?.image = self.allFiles[indexPath.row].image
         cell.documentName?.text = self.allFiles[indexPath.row].name
         cell.dateLabel?.text = self.allFiles[indexPath.row].size
         
@@ -131,14 +147,52 @@ class ScanVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
     override func viewDidLoad() {
         super.viewDidLoad()
         // To hide the top line
+        self.storedBarItem = self.backBttn
+        self.navigationItem.leftBarButtonItem = nil
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        // To hide the top line
-        //self.tabBarController?.tabBar.shadowImage = UIImage()
-        //self.tabBarController?.tabBar.backgroundImage = UIImage()
-        setUpMenu()
+        let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(longPressGR:)))
+            longPressGR.minimumPressDuration = 0.5
+            longPressGR.delaysTouchesBegan = true
+            self.collectionView.addGestureRecognizer(longPressGR)
+        //setUpMenu()
     }
     
-   
+    @objc
+    func handleLongPress(longPressGR: UILongPressGestureRecognizer) {
+        if longPressGR.state != .ended {
+            return
+        }
+        
+        let point = longPressGR.location(in: self.collectionView)
+        let indexPath = self.collectionView.indexPathForItem(at: point)
+        
+        if let indexPath = indexPath {
+            var cell = self.collectionView.cellForItem(at: indexPath)
+            let deleteAction = self.contextualDeleteAction(forRowAt: indexPath)
+        } else {
+            print("Could not find index path")
+        }
+    }
+    
+    func contextualDeleteAction(forRowAt indexPath : IndexPath) -> UIContextualAction {
+        let action = UIContextualAction(style: .normal, title: "Delete") { (contextAction, sourceView, completionHandler) in
+            let errorMessage = FileUtility.shared.deleteFile(url: self.allFiles[indexPath.row].url)
+            if(errorMessage == ""){
+                self.reloadTableData()
+                completionHandler(true)
+            }else{
+                self.presentAlert(title: "Failed", message: errorMessage)
+                completionHandler(false)
+            }
+        }
+        action.image = UIImage(named: "delete_forever")
+        action.title = "Delete"
+        action.backgroundColor = UIColor.red
+        return action
+    }
+    
+    
+    
     //MARK:- Set up uimenu Button
     
     @objc func setUpMenu(){

@@ -6,7 +6,6 @@ target 'DocScan' do
 
   # Pods for DocScan
     pod 'TDCRoundButton'
-    pod 'CBFlashyTabBarController'
     pod 'Firebase'
     pod 'Firebase/Auth'
     pod 'Firebase/Storage'
