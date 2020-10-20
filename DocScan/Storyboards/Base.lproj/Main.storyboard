@@ -251,7 +251,6 @@ save any of your data on servers.</string>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="folder.badge.plus" catalog="system" style="plain" id="fD3-sX-Dtq">
-                                <color key="tintColor" name="AppBlackColor"/>
                                 <connections>
                                     <action selector="showaddTapped:" destination="gra-LP-s25" id="01I-5T-kQn"/>
                                 </connections>
@@ -663,7 +662,7 @@ save any of your data on servers.</string>
             <size key="intrinsicContentSize" width="67" height="18.5"/>
         </designable>
     </designables>
-    <color key="tintColor" name="AppBlackColor"/>
+    <color key="tintColor" name="ButtonColor"/>
     <resources>
         <image name="MenuBttn" width="4" height="15"/>
         <image name="Settings" width="21" height="14"/>
