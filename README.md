@@ -30,7 +30,7 @@ To get started and run the app, you need to follow these simple steps:
 
 ## Compatibility
 
-This project is written in Swift 6.0 for the application part, requires Xcode 12.0 to build and run.
+This project is written in Swift 5.0 for the application part, requires Xcode 12.0 to build and run.
 
 DocScan is compatible with iOS 14.0+.
 
